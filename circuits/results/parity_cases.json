@@ -1,0 +1,1262 @@
+[
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 78,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 78,
+      "b_tick": 86,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 2,
+      "internal_deliveries": 10,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            0.43218679006531585,
+            -0.2887779807125567
+          ],
+          "radius": 0.5197866328132951,
+          "load": 0.5197866328132952,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 4,
+          "exit_tick": 96,
+          "release_tick": 120,
+          "phase": 3,
+          "vector": [
+            0.1855968184339014,
+            -0.2777652680005577
+          ],
+          "radius": 0.3340654473605558,
+          "load": 0.33406544736055566,
+          "gain": 1.0832862310679103
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 93,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 107,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 109,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 129,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 78,
+      "gap": 10,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 78,
+      "b_tick": 88,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 1,
+      "internal_deliveries": 8,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            0.43218679006531585,
+            -0.2887779807125567
+          ],
+          "radius": 0.5197866328132951,
+          "load": 0.5197866328132952,
+          "gain": 1.0353538480397826
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 93,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 107,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 109,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 78,
+      "gap": 12,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 90,
+      "b_tick": 78,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 105,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 103,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 101,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 79,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 79,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 81,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 78,
+      "gap": 14,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 92,
+      "b_tick": 78,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 107,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 105,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 103,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 79,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 79,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 81,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 78,
+      "gap": 16,
+      "noise_a": -1,
+      "noise_b": 2,
+      "a_tick": 77,
+      "b_tick": 96,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 2,
+      "internal_deliveries": 9,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 120,
+          "phase": 3,
+          "vector": [
+            0.2823099315666712,
+            -0.2823099315666713
+          ],
+          "radius": 0.399246534014207,
+          "load": 0.3992465340142068,
+          "gain": 1.0353538480397826
+        },
+        {
+          "yard": 8,
+          "exit_tick": 160,
+          "release_tick": 160,
+          "phase": 0,
+          "vector": [
+            0.3700001526191313,
+            0.24722619800698398
+          ],
+          "radius": 0.44499539988540215,
+          "load": 0.44499539988540215,
+          "gain": 1.0133975782409528
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 92,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 90,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 88,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 97,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 97,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 131,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 173,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 78,
+      "gap": 18,
+      "noise_a": 2,
+      "noise_b": -1,
+      "a_tick": 98,
+      "b_tick": 77,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 35,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 113,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 111,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 109,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 80,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [
+        12
+      ],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 78,
+      "gap": 20,
+      "noise_a": 1,
+      "noise_b": 1,
+      "a_tick": 79,
+      "b_tick": 99,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 3,
+      "internal_deliveries": 13,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            0.5865032985330665,
+            -0.2429376206289528
+          ],
+          "radius": 0.634826595777953,
+          "load": 0.6348265957779529,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 4,
+          "exit_tick": 96,
+          "release_tick": 120,
+          "phase": 3,
+          "vector": [
+            0.3247157121966967,
+            -0.3247157121966968
+          ],
+          "radius": 0.4592173641042073,
+          "load": 0.4592173641042072,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 7,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.26580697401262704,
+            0.6417148016346368
+          ],
+          "radius": 0.6945870961015118,
+          "load": 0.6945870961015118,
+          "gain": 1.031627241295174
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 94,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 92,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 90,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 102,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 107,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 109,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 151,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 151,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 147,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 78,
+      "gap": 22,
+      "noise_a": 0,
+      "noise_b": -2,
+      "a_tick": 100,
+      "b_tick": 76,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 35,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 115,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 113,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 111,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 77,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 77,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 79,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [
+        12
+      ],
+      "basket": {},
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 78,
+      "gap": 24,
+      "noise_a": -1,
+      "noise_b": 2,
+      "a_tick": 101,
+      "b_tick": 80,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 116,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 112,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 81,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 81,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 83,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {
+        "8": {
+          "96": 1.0,
+          "128": 0.5
+        }
+      },
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 78,
+      "gap": 8,
+      "noise_a": 2,
+      "noise_b": 0,
+      "a_tick": 80,
+      "b_tick": 86,
+      "label": 1
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 3,
+      "internal_deliveries": 12,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            0.708305357078217,
+            -0.1408906954041225
+          ],
+          "radius": 0.7221818793885358,
+          "load": 0.7221818793885357,
+          "gain": 1.0353538480397826
+        },
+        {
+          "yard": 4,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            0.4971055766946006,
+            -0.33215532713788587
+          ],
+          "radius": 0.5978637936243902,
+          "load": 0.5978637936243901,
+          "gain": 0.9882478852426342
+        },
+        {
+          "yard": 6,
+          "exit_tick": 96,
+          "release_tick": 120,
+          "phase": 3,
+          "vector": [
+            0.21654642017430792,
+            -0.32408462031745194
+          ],
+          "radius": 0.38977325872437046,
+          "load": 0.38977325872437024,
+          "gain": 1.0040810021111743
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 95,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 93,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 107,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 109,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 109,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 121,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 125,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {
+        "8": {
+          "96": 1.0,
+          "128": 0.5
+        }
+      },
+      "chandelier": {}
+    }
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 78,
+      "gap": 10,
+      "noise_a": -2,
+      "noise_b": 1,
+      "a_tick": 76,
+      "b_tick": 89,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 89,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 90,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 90,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 92,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {
+        "14": {
+          "160": 2.0
+        }
+      }
+    }
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 78,
+      "gap": 12,
+      "noise_a": 0,
+      "noise_b": 2,
+      "a_tick": 90,
+      "b_tick": 80,
+      "label": 0
+    },
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 105,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 103,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 101,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 81,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 81,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 83,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {
+      "brokenEdges": [],
+      "basket": {},
+      "chandelier": {
+        "14": {
+          "160": 2.0
+        }
+      }
+    }
+  }
+]

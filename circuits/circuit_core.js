@@ -33,7 +33,7 @@
     for (let i = 0; i < 90; i++) {
       const e = model.edges[i], a = ref[i];
       for (const k of ['id', 'src', 'dst', 'family', 'port']) if (e[k] !== a[k]) throw Error('Noncanonical edge '+i+' '+k);
-      if (!DELAYS.includes(e.delay) || !(e.weight >= 0.05 && e.weight <= 2)) throw Error('Invalid operational rail '+i);
+      if (!DELAYS.includes(e.delay) || !(model.architecture?.spiking ? e.weight >= -2 && e.weight <= 2 : e.weight >= 0.05 && e.weight <= 2)) throw Error('Invalid operational rail '+i);
       if (e.active && e.broken) throw Error('Active broken rail '+i);
       active += Number(!!e.active);
     }
@@ -55,6 +55,7 @@
   }
   function infer(model, example, opts={}) {
     if (opts.validate !== false) validate(model);
+    if(model.architecture?.spiking) return inferSpiking(model, example, opts);
     const ticks=opts.ticks??model.ticks;
     const broken = new Set(opts.brokenEdges||[]);
     const bySource=Array.from({length:16},()=>[]);
@@ -112,6 +113,7 @@
         const scores=[xstar/radius,ystar/radius,-xstar/radius,-ystar/radius];
         let address=0;
         for(let k=1;k<4;k++)if(scores[k]>scores[address])address=k; // lowest index wins ties
+        if(model.architecture?.fixed_phase) address=0;
         if(opts.phaseOverride!==undefined && opts.phaseOverride!==null){
           address= typeof opts.phaseOverride==='number' ? opts.phaseOverride%4 : (opts.phaseOverride[address]??address)%4;
         }
@@ -138,6 +140,59 @@
     const prediction=counts[0]===counts[1]?null:(counts[1]>counts[0]?1:0);
     const result={counts,prediction,label:example.label,correct:prediction===example.label,
       abstained:prediction===null,active_rails:live,exit_events:events.length,
+      internal_deliveries:opts.trace?deliveries.length:null,beyond_horizon_deliveries:beyond,
+      release_events:outputReleases};
+    if(opts.trace){result.events=events;result.deliveries=deliveries;}
+    return result;
+  }
+  function inferSpiking(model,example,opts={}) {
+    // Same classical signed LIF-style comparator as Python infer_spiking.
+    const ticks=opts.ticks??model.ticks,broken=new Set(opts.brokenEdges||[]),es=model.edges;
+    const bySource=Array.from({length:16},()=>[]);let active=0;
+    for(let i=0;i<es.length;i++){
+      if(!es[i].active||es[i].broken||broken.has(i))continue;
+      bySource[es[i].src].push(i);active++;
+    }
+    const arrivals=new Map(),events=[],deliveries=[],outputReleases=[];
+    let beyond=0;
+    function schedule(t,payload){if(!arrivals.has(t))arrivals.set(t,[]);arrivals.get(t).push(payload);}
+    for(const [src,t] of [[0,example.a_tick],[1,example.b_tick]])for(const eid of bySource[src]){
+      const e=es[eid],at=t+e.delay;schedule(at,[eid,e.weight]);
+      if(at>=ticks)beyond++;
+      if(opts.trace)deliveries.push({edge:eid,source:src,dest:e.dst,tick:at,origin:'sensory'});
+    }
+    const v=new Float64Array(16),lastFire=new Int32Array(16).fill(-10000);
+    for(let t=0;t<ticks;t++){
+      const byDest=new Map();
+      for(const [eid,value] of arrivals.get(t)||[]){const d=es[eid].dst;
+        if(!byDest.has(d))byDest.set(d,[]);
+        byDest.get(d).push(value);
+      }
+      arrivals.delete(t);
+      for(let y=2;y<16;y++){
+        let basal=0;
+        for(const value of byDest.get(y)||[])basal+=value;
+        const next=model.leak*v[y]+basal;
+        const gain=y<14?Math.exp(model.context_scale*Math.tanh(model.context[y-2][example.context])):1;
+        const h=model.thresholds[y-2];
+        const fire=(gain*next>=h && t-lastFire[y]>=2);
+        if(!fire){v[y]=next;continue;}
+        v[y]=next-h/gain;lastFire[y]=t;
+        events.push({yard:y,exit_tick:t,release_tick:t,phase:0,vector:[0,0],radius:next,load:next,gain});
+        if(y===14||y===15)outputReleases.push({yard:y,tick:t,phase:0,exit_tick:t});
+        for(const eid of bySource[y]){
+          const e=es[eid],at=t+e.delay;
+          schedule(at,[eid,e.weight]);
+          if(at>=ticks)beyond++;
+          if(opts.trace)deliveries.push({edge:eid,source:y,dest:e.dst,tick:at,origin:'yard'});
+        }
+      }
+    }
+    const [start,stop]=model.score_window;
+    const counts=[14,15].map(y=>outputReleases.filter(r=>r.yard===y&&r.tick>=start&&r.tick<stop).length);
+    const prediction=counts[0]===counts[1]?null:(counts[1]>counts[0]?1:0);
+    const result={counts,prediction,label:example.label,correct:prediction===example.label,
+      abstained:prediction===null,active_rails:active,exit_events:events.length,
       internal_deliveries:opts.trace?deliveries.length:null,beyond_horizon_deliveries:beyond,
       release_events:outputReleases};
     if(opts.trace){result.events=events;result.deliveries=deliveries;}

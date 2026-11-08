@@ -50,6 +50,13 @@ def candidate_edges() -> list[dict[str, Any]]:
     return edges
 
 
+def phase_address(x:float,y:float,epsilon:float=1e-8)->int:
+    """Four-address normalized dot product: lower address wins exact ties."""
+    r=math.sqrt(x*x+y*y+epsilon**2)
+    q=(x/r,y/r,-x/r,-y/r)
+    return max(range(4),key=lambda k:(q[k],-k))
+
+
 def make_model(seed: int=11) -> dict[str, Any]:
     rng = random.Random(seed)
     edges = candidate_edges()
@@ -169,8 +176,7 @@ def infer(model:dict[str,Any], example:dict[str,Any], *, trace=False, broken_edg
             h=model["thresholds"][y-2]
             fire=(gain*radius>=h and lstar>model["epsilon"] and c[y]<model["veto_threshold"])
             if not fire: continue
-            scores=(xstar/radius,ystar/radius,-xstar/radius,-ystar/radius)
-            address=max(range(4),key=lambda j:(scores[j],-j))
+            address=phase_address(xstar,ystar,model["epsilon"])
             if model.get("architecture",{}).get("fixed_phase"):
                 address=0
             if phase_override is not None:

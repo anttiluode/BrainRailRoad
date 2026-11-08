@@ -22,7 +22,18 @@ for i,x in enumerate(ex):
              "options":{ "brokenEdges":list(kw.get("broken_edges",[])),
                "basket":kw.get("basket",{}),"chandelier":kw.get("chandelier",{})}}
     fixtures.append(fixture)
+# Strong-event fixtures cross the H1 -> H2 -> O path and exercise phase-1 releases.
+strong=make_model(11)
+for rail in strong["edges"]:
+    rail["weight"]=2.0
+    rail["delay"]=1
+strong["thresholds"]=[0.15]*14
+for order,context in ((0,0),(0,1),(1,0),(1,1)):
+    example=trial(order,context,95,8)
+    result=infer(strong,example,trace=True)
+    fixtures.append({"example":example,"model":"strong","result":result,"options":{}})
 folder=ROOT/"results"
 save_model(m,folder/"untrained_seed11.json")
+save_model(strong,folder/"strong_reference.json")
 (folder/"parity_cases.json").write_text(json.dumps(fixtures,indent=2)+"\n",encoding="utf8")
 print(f"Wrote {len(fixtures)} exact reference cases, {sum(len(f['result']['events']) for f in fixtures)} internal firings")

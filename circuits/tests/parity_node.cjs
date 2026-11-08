@@ -1,10 +1,11 @@
 const fs = require('node:fs'), assert=require('node:assert/strict'),path=require('node:path');
 const core=require('../circuit_core.js'),root=path.resolve(__dirname,'..');
 const model=JSON.parse(fs.readFileSync(path.join(root,'results/untrained_seed11.json'),'utf8'));
+const strong=JSON.parse(fs.readFileSync(path.join(root,'results/strong_reference.json'),'utf8'));
 const examples=JSON.parse(fs.readFileSync(path.join(root,'results/parity_cases.json'),'utf8'));
 let nEvents=0;
 for(let i=0;i<examples.length;i++){
-  const f=examples[i],py=f.result,js=core.infer(model,f.example,{...f.options,trace:true});
+  const f=examples[i],py=f.result,js=core.infer(f.model==='strong'?strong:model,f.example,{...f.options,trace:true});
   for(const key of ['counts','prediction','label','correct','abstained','active_rails','exit_events','internal_deliveries','beyond_horizon_deliveries']){
     assert.deepStrictEqual(js[key],py[key],`Case ${i} ${key}`);
   }

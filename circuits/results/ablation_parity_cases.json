@@ -1,0 +1,394 @@
+[
+  {
+    "model": "fixed_phase",
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 95,
+      "b_tick": 103,
+      "label": 0
+    },
+    "counts": [
+      0,
+      0
+    ],
+    "prediction": null,
+    "exit_events": 1,
+    "deliveries": 8,
+    "first_releases": []
+  },
+  {
+    "model": "fixed_phase",
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 95,
+      "b_tick": 103,
+      "label": 1
+    },
+    "counts": [
+      0,
+      0
+    ],
+    "prediction": null,
+    "exit_events": 1,
+    "deliveries": 8,
+    "first_releases": []
+  },
+  {
+    "model": "fixed_phase",
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 103,
+      "b_tick": 95,
+      "label": 1
+    },
+    "counts": [
+      0,
+      1
+    ],
+    "prediction": 1,
+    "exit_events": 3,
+    "deliveries": 12,
+    "first_releases": [
+      {
+        "yard": 15,
+        "tick": 192,
+        "phase": 0,
+        "exit_tick": 192
+      }
+    ]
+  },
+  {
+    "model": "fixed_phase",
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 103,
+      "b_tick": 95,
+      "label": 0
+    },
+    "counts": [
+      0,
+      2
+    ],
+    "prediction": 1,
+    "exit_events": 7,
+    "deliveries": 19,
+    "first_releases": [
+      {
+        "yard": 15,
+        "tick": 192,
+        "phase": 0,
+        "exit_tick": 192
+      },
+      {
+        "yard": 15,
+        "tick": 224,
+        "phase": 0,
+        "exit_tick": 224
+      }
+    ]
+  },
+  {
+    "model": "spiking",
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 95,
+      "b_tick": 103,
+      "label": 0
+    },
+    "counts": [
+      96,
+      96
+    ],
+    "prediction": null,
+    "exit_events": 837,
+    "deliveries": 1278,
+    "first_releases": [
+      {
+        "yard": 14,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 15,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 14,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 15,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 14,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 15,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 14,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 15,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      }
+    ]
+  },
+  {
+    "model": "spiking",
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 95,
+      "b_tick": 103,
+      "label": 1
+    },
+    "counts": [
+      96,
+      96
+    ],
+    "prediction": null,
+    "exit_events": 837,
+    "deliveries": 1278,
+    "first_releases": [
+      {
+        "yard": 14,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 15,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 14,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 15,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 14,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 15,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 14,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 15,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      }
+    ]
+  },
+  {
+    "model": "spiking",
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 103,
+      "b_tick": 95,
+      "label": 1
+    },
+    "counts": [
+      96,
+      96
+    ],
+    "prediction": null,
+    "exit_events": 844,
+    "deliveries": 1302,
+    "first_releases": [
+      {
+        "yard": 14,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 14,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 14,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 15,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 14,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 15,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 14,
+        "tick": 122,
+        "phase": 0,
+        "exit_tick": 122
+      },
+      {
+        "yard": 15,
+        "tick": 122,
+        "phase": 0,
+        "exit_tick": 122
+      }
+    ]
+  },
+  {
+    "model": "spiking",
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 95,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 103,
+      "b_tick": 95,
+      "label": 0
+    },
+    "counts": [
+      96,
+      96
+    ],
+    "prediction": null,
+    "exit_events": 844,
+    "deliveries": 1302,
+    "first_releases": [
+      {
+        "yard": 14,
+        "tick": 114,
+        "phase": 0,
+        "exit_tick": 114
+      },
+      {
+        "yard": 14,
+        "tick": 116,
+        "phase": 0,
+        "exit_tick": 116
+      },
+      {
+        "yard": 14,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 15,
+        "tick": 118,
+        "phase": 0,
+        "exit_tick": 118
+      },
+      {
+        "yard": 14,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 15,
+        "tick": 120,
+        "phase": 0,
+        "exit_tick": 120
+      },
+      {
+        "yard": 14,
+        "tick": 122,
+        "phase": 0,
+        "exit_tick": 122
+      },
+      {
+        "yard": 15,
+        "tick": 122,
+        "phase": 0,
+        "exit_tick": 122
+      }
+    ]
+  }
+]

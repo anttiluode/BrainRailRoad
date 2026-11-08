@@ -46,6 +46,32 @@ The first 100-update, 32-trial-batch seed-11 probe with the design's threshold i
 
 Development probes are not the five-seed protocol. No headline accuracy is reported from them. A complete experiment must run the exact stored manifests, five seeds, fixed-phase/fixed-delay/fixed-topology controls, conventional spiking and GRU comparisons, and lesion recovery under its supervised protocol. Those items are not silently marked as finished.
 
+## New matched-search-size GRU task control (five development seeds)
+
+A conventional GRU with **15 hidden units and 977 trainable parameters** receives the four per-tick input channels A, B, context0, context1. The railway trainer searches roughly 938 raw parameters including dormant candidate delays/topology; that is **not the same as exported inference work**. The GRU produces one final prediction after tick **127** (after the latest possible stimulus). The originally tested tick-319 readout did **not** learn in a 700-update seed-11 probe, indicating a long-gap credit/memory issue distinct from the yard's hard-event silence. Switching the GRU readout was an explicitly labeled **development change**, not a new result from the original specified comparator.
+
+All five GRU seeds (11, 23, 37, 53, 71) trained for **700 updates** and selected checkpoints on the first **512 validation** examples by accuracy and then cross-entropy. The frozen 2,048-example evaluation manifests were not consulted during training or checkpoint selection. Across seeds the medians are:
+
+| Frozen split | GRU median accuracy | Worst of five seeds |
+| --- | ---: | ---: |
+| Validation | **100.00%** | 99.66% |
+| Unseen interpolation gaps | **100.00%** | 99.95% |
+| Independent ±2-tick jitter | **99.61%** | 98.63% |
+| Out-of-range gaps | **95.12%** | 89.55% |
+
+Source: [`circuits/results/gru_five_seed_development_summary.json`](circuits/results/gru_five_seed_development_summary.json), with per-seed cell results, saved checkpoint hashes and exact frozen-split receipts. Checkpoints are provided under [`circuits/checkpoints/`](circuits/checkpoints/) and the trainer is [`circuits/gru_baseline.py`](circuits/gru_baseline.py).
+
+This **does not rescue the train model**: it establishes that the *task* is learnable by a normal recurrent model when it reads promptly. It is not a matched-compute energy comparison, and none of the five GRU models is being presented as a learned railway. The main rail architecture still fails its development training attempts; it needs an honest optimization diagnosis and all requested controls before any advantage claim.
+
+To reproduce one control seed:
+
+```bash
+cd circuits
+python task.py --freeze
+python gru_baseline.py --seed 11 --hidden 15 --readout-tick 127 --updates 700 --batch 32 --val-every 100 --checkpoints
+python gru_baseline.py --seed 11 --hidden 15 --readout-tick 127 --eval-frozen
+```
+
 ## Reproducibility / no hidden teacher
 
 The default bundled model was drawn from `make_model(11)` and is identified as **random-untrained** in the export. The browser's answer panel shows what this model actually does, often `ABSTAIN` or an incorrect response. If a checkpoint is trained later, `train.py` writes a **hard** export in `circuits/results/`; the same JSON can be loaded in the lab without trainer code. Every operational active rail can be audited; context channels and pilot infrastructure are separately counted and cannot inject labels.

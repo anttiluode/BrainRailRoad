@@ -10,3 +10,10 @@
 - Training checkpoints are PyTorch-specific and not inference exports. Only the bounded hard JSON after training is suitable for the JavaScript engine; each export includes an origin tag.
 - All timestamps and model-seed results are deterministic. The existing task's four scoring cells are A/B order × two contexts, with no target or label feed-in.
 - A future successful experimental revision must update this ledger instead of replacing the failed history.
+
+## November 8 GRU development control
+
+- A four-input-channel, 977-trainable-parameter GRU was run as an independent task sanity check on five seeded models, 700 updates per seed. The first tick-319 readout probe remained near chance. Changing the only readout to tick 127—after every possible sensory emission, before the railway scoring window—allowed this baseline to learn. This is explicitly *not* a claim of parameter/work parity or a learned railway.
+- Checkpoint selection used the first 512 validation examples; all four 2048-item frozen manifests were evaluated only afterward and are reported per seed and per order/context cell. No model was selected by test outcomes.
+- An extra output coverage penalty tested on the hard railway (seed 11, initial threshold 0.16, 400 development updates) did not fix training: 128-example validation accuracy peaked around 34% early and was 18% at step 400, with frequent abstentions. It is not incorporated into the default trainer or any successful claim.
+- The main design's five-seed, 1500-update hard-event experiment, clock-pilot intervention, lesion recovery and matched spiking/GRU comparisons have not been completed. The verified hard reference remains distinct from a successfully optimized circuit.

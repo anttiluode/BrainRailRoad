@@ -1,0 +1,234 @@
+{
+  "status": "DEVELOPMENT CONTROL, not an end-to-end learned BrainRailRoad",
+  "method": "conventional GRU, four per-tick input channels A/B/context0/context1, one readout at tick 127",
+  "hidden": 15,
+  "trainable_parameters": 977,
+  "training_batch": 32,
+  "updates": 700,
+  "validation_selection": "512 seeded validation examples only; each seed best checkpoint selected by validation accuracy, ties by CE",
+  "frozen_evaluation": "Each frozen split has 2048 trials; interpolation gaps disjoint from training, noisy independent jitter \u00b12; no test used for tuning",
+  "seeds": [
+    {
+      "seed": 11,
+      "hidden_size": 15,
+      "trainable_parameters": 977,
+      "train_updates": 700,
+      "selected_from": "512 seeded validation trials, accuracy then CE",
+      "best_step": 700,
+      "checkpoint_sha256": "8f149243e1e2e042e4bebb56f53b486e3ed8d5feb308bcffc8b0f8345945c7a9",
+      "accuracy": {
+        "validation": 1.0,
+        "interpolation": 1.0,
+        "noisy": 0.986328125,
+        "extrapolation": 0.8955078125
+      },
+      "cell_accuracy": {
+        "validation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "interpolation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "noisy": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 0.994140625,
+          "1_1": 0.951171875
+        },
+        "extrapolation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 0.92578125,
+          "1_1": 0.65625
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "hidden_size": 15,
+      "trainable_parameters": 977,
+      "train_updates": 700,
+      "selected_from": "512 seeded validation trials, accuracy then CE",
+      "best_step": 700,
+      "checkpoint_sha256": "ddbc6acdbd995b38379670da21b6a1bd96f937638deef80fca3d7eef282ac93c",
+      "accuracy": {
+        "validation": 1.0,
+        "interpolation": 1.0,
+        "noisy": 0.9990234375,
+        "extrapolation": 0.98779296875
+      },
+      "cell_accuracy": {
+        "validation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "interpolation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "noisy": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 0.99609375
+        },
+        "extrapolation": {
+          "0_0": 1.0,
+          "0_1": 0.970703125,
+          "1_0": 1.0,
+          "1_1": 0.98046875
+        }
+      }
+    },
+    {
+      "seed": 37,
+      "hidden_size": 15,
+      "trainable_parameters": 977,
+      "train_updates": 700,
+      "selected_from": "512 seeded validation trials, accuracy then CE",
+      "best_step": 700,
+      "checkpoint_sha256": "2096eb8fd26855c1fbe7e1434990c4417c286f574037d45a30ffb2a5f680a247",
+      "accuracy": {
+        "validation": 1.0,
+        "interpolation": 1.0,
+        "noisy": 0.998046875,
+        "extrapolation": 0.92529296875
+      },
+      "cell_accuracy": {
+        "validation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "interpolation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "noisy": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 0.99609375,
+          "1_1": 0.99609375
+        },
+        "extrapolation": {
+          "0_0": 0.97265625,
+          "0_1": 1.0,
+          "1_0": 0.73828125,
+          "1_1": 0.990234375
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "hidden_size": 15,
+      "trainable_parameters": 977,
+      "train_updates": 700,
+      "selected_from": "512 seeded validation trials, accuracy then CE",
+      "best_step": 700,
+      "checkpoint_sha256": "2ef115917ec604e1f76b6bbaa3794d2556016dc926363f009b20068ef38d5435",
+      "accuracy": {
+        "validation": 0.99658203125,
+        "interpolation": 0.99951171875,
+        "noisy": 0.9951171875,
+        "extrapolation": 0.951171875
+      },
+      "cell_accuracy": {
+        "validation": {
+          "0_0": 1.0,
+          "0_1": 0.986328125,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "interpolation": {
+          "0_0": 1.0,
+          "0_1": 0.998046875,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "noisy": {
+          "0_0": 1.0,
+          "0_1": 0.990234375,
+          "1_0": 0.998046875,
+          "1_1": 0.9921875
+        },
+        "extrapolation": {
+          "0_0": 1.0,
+          "0_1": 0.916015625,
+          "1_0": 0.978515625,
+          "1_1": 0.91015625
+        }
+      }
+    },
+    {
+      "seed": 71,
+      "hidden_size": 15,
+      "trainable_parameters": 977,
+      "train_updates": 700,
+      "selected_from": "512 seeded validation trials, accuracy then CE",
+      "best_step": 700,
+      "checkpoint_sha256": "eb94a26550d1d6c2cff4d55d50f31de7943069cb27807e64a511c04e4db66112",
+      "accuracy": {
+        "validation": 0.9990234375,
+        "interpolation": 1.0,
+        "noisy": 0.99609375,
+        "extrapolation": 0.9560546875
+      },
+      "cell_accuracy": {
+        "validation": {
+          "0_0": 1.0,
+          "0_1": 0.99609375,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "interpolation": {
+          "0_0": 1.0,
+          "0_1": 1.0,
+          "1_0": 1.0,
+          "1_1": 1.0
+        },
+        "noisy": {
+          "0_0": 1.0,
+          "0_1": 0.998046875,
+          "1_0": 1.0,
+          "1_1": 0.986328125
+        },
+        "extrapolation": {
+          "0_0": 1.0,
+          "0_1": 0.9296875,
+          "1_0": 1.0,
+          "1_1": 0.89453125
+        }
+      }
+    }
+  ],
+  "median_accuracy": {
+    "validation": 1.0,
+    "interpolation": 1.0,
+    "noisy": 0.99609375,
+    "extrapolation": 0.951171875
+  },
+  "mean_accuracy": {
+    "validation": 0.99912109375,
+    "interpolation": 0.99990234375,
+    "noisy": 0.994921875,
+    "extrapolation": 0.9431640625
+  },
+  "important_limitations": [
+    "This GRU sees full per-tick A/B/context and reads after both sensory events. It has no output-rail event-count constraint, no spike cost and no explicit train delays. Therefore accuracy comparison alone does not prove or disprove phase-circuit efficiency.",
+    "Tick-319 GRU training with identical parameter count also stagnated at chance in the tested 700-update seed-11 run, demonstrating a separate long-gap optimization difficulty.",
+    "The hard BrainRailRoad has not met its supervised accuracy target; coverage-loss development probe still failed."
+  ]
+}

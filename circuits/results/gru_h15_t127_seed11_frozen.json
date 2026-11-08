@@ -1,0 +1,49 @@
+{
+  "architecture": "GRU on A,B and tonic context, readout at tick 127",
+  "seed": 11,
+  "hidden": 15,
+  "parameters": 977,
+  "checkpoint": "gru_h15_t127_seed11.pt",
+  "splits": {
+    "validation": {
+      "accuracy": 1.0,
+      "ce": 0.00261883823077369,
+      "cell_accuracy": {
+        "0_0": 1.0,
+        "0_1": 1.0,
+        "1_0": 1.0,
+        "1_1": 1.0
+      }
+    },
+    "interpolation": {
+      "accuracy": 1.0,
+      "ce": 0.0015341065954999067,
+      "cell_accuracy": {
+        "0_0": 1.0,
+        "0_1": 1.0,
+        "1_0": 1.0,
+        "1_1": 1.0
+      }
+    },
+    "noisy": {
+      "accuracy": 0.986328125,
+      "ce": 0.06393206613029179,
+      "cell_accuracy": {
+        "0_0": 1.0,
+        "0_1": 1.0,
+        "1_0": 0.994140625,
+        "1_1": 0.951171875
+      }
+    },
+    "extrapolation": {
+      "accuracy": 0.8955078125,
+      "ce": 0.47829680144786835,
+      "cell_accuracy": {
+        "0_0": 1.0,
+        "0_1": 1.0,
+        "1_0": 0.92578125,
+        "1_1": 0.65625
+      }
+    }
+  }
+}

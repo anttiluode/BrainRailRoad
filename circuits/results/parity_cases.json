@@ -7419,5 +7419,7949 @@
       ]
     },
     "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 64,
+      "gap": 6,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 64,
+      "b_tick": 70,
+      "label": 0
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        2,
+        0
+      ],
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "abstained": false,
+      "active_rails": 36,
+      "exit_events": 6,
+      "internal_deliveries": 15,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 14,
+          "tick": 184,
+          "phase": 3,
+          "exit_tick": 160
+        },
+        {
+          "yard": 14,
+          "tick": 216,
+          "phase": 3,
+          "exit_tick": 192
+        }
+      ],
+      "clock_origin": 64,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 5,
+          "exit_tick": 96,
+          "release_tick": 104,
+          "phase": 1,
+          "vector": [
+            0.07636816078336148,
+            0.3839286706472097
+          ],
+          "radius": 0.39145027797456866,
+          "load": 0.3914502779745684,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 7,
+          "exit_tick": 96,
+          "release_tick": 104,
+          "phase": 1,
+          "vector": [
+            -0.15888446995637018,
+            0.7987661704971429
+          ],
+          "radius": 0.8144149249148052,
+          "load": 0.8144149249148045,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 11,
+          "exit_tick": 128,
+          "release_tick": 152,
+          "phase": 3,
+          "vector": [
+            -0.19127467429099512,
+            -0.9616027239066264
+          ],
+          "radius": 0.9804416350042311,
+          "load": 0.9804416350042313,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 11,
+          "exit_tick": 160,
+          "release_tick": 184,
+          "phase": 3,
+          "vector": [
+            -0.07756541090253949,
+            -0.38994765345330445
+          ],
+          "radius": 0.39758717962507084,
+          "load": 0.3975871796250708,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 14,
+          "exit_tick": 160,
+          "release_tick": 184,
+          "phase": 3,
+          "vector": [
+            0.10513281259989316,
+            -0.5285383407017087
+          ],
+          "radius": 0.538893018953558,
+          "load": 0.538893018953558,
+          "gain": 1.0
+        },
+        {
+          "yard": 14,
+          "exit_tick": 192,
+          "release_tick": 216,
+          "phase": 3,
+          "vector": [
+            0.12785295291703397,
+            -0.6427601993847113
+          ],
+          "radius": 0.6553526161408675,
+          "load": 0.6553526161408674,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 79,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 77,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 75,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 71,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 71,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 73,
+          "origin": "sensory"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 119,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 107,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 119,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 119,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 115,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 153,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 185,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 71,
+      "gap": 12,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 83,
+      "b_tick": 71,
+      "label": 1
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "clock_origin": 71,
+      "pilot_deliveries": 14,
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 98,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 96,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 94,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 72,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 72,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 74,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 83,
+      "gap": 18,
+      "noise_a": 1,
+      "noise_b": -2,
+      "a_tick": 84,
+      "b_tick": 99,
+      "label": 1
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "clock_origin": 84,
+      "pilot_deliveries": 14,
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 97,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 95,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 102,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 90,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 98,
+      "b_tick": 90,
+      "label": 0
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "clock_origin": 90,
+      "pilot_deliveries": 14,
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 113,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 111,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 109,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 93,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 95,
+      "gap": 16,
+      "noise_a": 2,
+      "noise_b": 2,
+      "a_tick": 97,
+      "b_tick": 113,
+      "label": 0
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "clock_origin": 97,
+      "pilot_deliveries": 14,
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 112,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 110,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 108,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 116,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 77,
+      "gap": 10,
+      "noise_a": -1,
+      "noise_b": 0,
+      "a_tick": 86,
+      "b_tick": 77,
+      "label": 1
+    },
+    "model": "untrained",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        0
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 0,
+      "internal_deliveries": 6,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [],
+      "clock_origin": 77,
+      "pilot_deliveries": 14,
+      "events": [],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 101,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 97,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 80,
+          "origin": "sensory"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 64,
+      "gap": 6,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 64,
+      "b_tick": 70,
+      "label": 0
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        5,
+        5
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 64,
+      "internal_deliveries": 132,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 14,
+          "tick": 168,
+          "phase": 1,
+          "exit_tick": 160
+        },
+        {
+          "yard": 15,
+          "tick": 168,
+          "phase": 1,
+          "exit_tick": 160
+        },
+        {
+          "yard": 14,
+          "tick": 200,
+          "phase": 1,
+          "exit_tick": 192
+        },
+        {
+          "yard": 15,
+          "tick": 200,
+          "phase": 1,
+          "exit_tick": 192
+        },
+        {
+          "yard": 14,
+          "tick": 232,
+          "phase": 1,
+          "exit_tick": 224
+        },
+        {
+          "yard": 15,
+          "tick": 232,
+          "phase": 1,
+          "exit_tick": 224
+        },
+        {
+          "yard": 14,
+          "tick": 264,
+          "phase": 1,
+          "exit_tick": 256
+        },
+        {
+          "yard": 15,
+          "tick": 264,
+          "phase": 1,
+          "exit_tick": 256
+        },
+        {
+          "yard": 14,
+          "tick": 296,
+          "phase": 1,
+          "exit_tick": 288
+        },
+        {
+          "yard": 15,
+          "tick": 296,
+          "phase": 1,
+          "exit_tick": 288
+        }
+      ],
+      "clock_origin": 64,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 3,
+          "exit_tick": 96,
+          "release_tick": 104,
+          "phase": 1,
+          "vector": [
+            0.25732488673928317,
+            1.2936595654112089
+          ],
+          "radius": 1.3190038546248843,
+          "load": 1.319003854624884,
+          "gain": 1.0259876369362844
+        },
+        {
+          "yard": 4,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 5,
+          "exit_tick": 96,
+          "release_tick": 104,
+          "phase": 1,
+          "vector": [
+            0.25732488673928317,
+            1.2936595654112089
+          ],
+          "radius": 1.3190038546248843,
+          "load": 1.319003854624884,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 6,
+          "exit_tick": 96,
+          "release_tick": 96,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 7,
+          "exit_tick": 96,
+          "release_tick": 104,
+          "phase": 1,
+          "vector": [
+            0.25732488673928317,
+            1.2936595654112089
+          ],
+          "radius": 1.3190038546248843,
+          "load": 1.319003854624884,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 2,
+          "exit_tick": 128,
+          "release_tick": 128,
+          "phase": 0,
+          "vector": [
+            0.6378941233772661,
+            0.12688503021854367
+          ],
+          "radius": 0.6503912080685068,
+          "load": 0.6503912080685068,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 3,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.1410653227776529,
+            0.7091832681695742
+          ],
+          "radius": 0.7230769897749767,
+          "load": 0.7230769897749763,
+          "gain": 1.0259876369362844
+        },
+        {
+          "yard": 4,
+          "exit_tick": 128,
+          "release_tick": 128,
+          "phase": 0,
+          "vector": [
+            0.6447149436666313,
+            0.12824177572977244
+          ],
+          "radius": 0.6573456561272714,
+          "load": 0.6573456561272709,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 5,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.1405331955243163,
+            0.7065080838140387
+          ],
+          "radius": 0.7203493954594955,
+          "load": 0.7203493954594953,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 6,
+          "exit_tick": 128,
+          "release_tick": 128,
+          "phase": 0,
+          "vector": [
+            0.641406100976994,
+            0.12758360599708984
+          ],
+          "radius": 0.6539719893770151,
+          "load": 0.6539719893770152,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 7,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.14116145524051202,
+            0.7096665586965814
+          ],
+          "radius": 0.7235697485231589,
+          "load": 0.7235697485231586,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 8,
+          "exit_tick": 128,
+          "release_tick": 128,
+          "phase": 0,
+          "vector": [
+            2.35777413141804,
+            0.4964062468717982
+          ],
+          "radius": 2.409464259273716,
+          "load": 2.4362032426557922,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            -0.5070748047124403,
+            2.671369110269904
+          ],
+          "radius": 2.719069285781144,
+          "load": 2.7427916442354006,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.9396570231722444,
+            1.5730256830610299
+          ],
+          "radius": 1.83231141478913,
+          "load": 2.5879663084099764,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            0.9110423035333559,
+            1.5947496740806717
+          ],
+          "radius": 1.8366340413396927,
+          "load": 2.591028578481217,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            -0.5356895243513285,
+            2.693093101289546
+          ],
+          "radius": 2.74585391430664,
+          "load": 2.74585391430664,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 128,
+          "release_tick": 136,
+          "phase": 1,
+          "vector": [
+            -0.5356895243513285,
+            2.693093101289546
+          ],
+          "radius": 2.74585391430664,
+          "load": 2.74585391430664,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 2,
+          "exit_tick": 160,
+          "release_tick": 160,
+          "phase": 0,
+          "vector": [
+            0.3027346679778666,
+            0.06021766949537221
+          ],
+          "radius": 0.30866559075336386,
+          "load": 0.30866559075336375,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 3,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            0.06938696185594734,
+            0.34883181357703386
+          ],
+          "radius": 0.3556658328249163,
+          "load": 0.35566583282491593,
+          "gain": 1.0259876369362844
+        },
+        {
+          "yard": 4,
+          "exit_tick": 160,
+          "release_tick": 160,
+          "phase": 0,
+          "vector": [
+            0.3137607785833431,
+            0.06241089925889746
+          ],
+          "radius": 0.3199077156361347,
+          "load": 0.31990771563613435,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 5,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            0.06852675828767184,
+            0.34450727820697485
+          ],
+          "radius": 0.35125657479824496,
+          "load": 0.3512565747982448,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 6,
+          "exit_tick": 160,
+          "release_tick": 160,
+          "phase": 0,
+          "vector": [
+            0.30841191086299763,
+            0.06134694331784292
+          ],
+          "radius": 0.3144540574020445,
+          "load": 0.31445405740204446,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 7,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            0.06954236357059362,
+            0.3496130707542191
+          ],
+          "radius": 0.35646239573506117,
+          "load": 0.3564623957350612,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 8,
+          "exit_tick": 160,
+          "release_tick": 160,
+          "phase": 0,
+          "vector": [
+            3.69341859277159,
+            0.9098681584960284
+          ],
+          "radius": 3.8038402920306504,
+          "load": 3.971792136547535,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            -0.8080714359949522,
+            4.2558146741253235
+          ],
+          "radius": 4.331851565574631,
+          "load": 4.369410990444404,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            1.447482289005206,
+            2.592354792334908
+          ],
+          "radius": 2.969092175451196,
+          "load": 4.185566289947534,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            1.4035014313691832,
+            2.627921023679913
+          ],
+          "radius": 2.979225599808485,
+          "load": 4.192832215545967,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            -0.8726164622288166,
+            4.386939202042075
+          ],
+          "radius": 4.472884421999556,
+          "load": 4.472884421999555,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            -0.9002876709706559,
+            4.52605176254478
+          ],
+          "radius": 4.614722358683832,
+          "load": 4.614722358683833,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            -0.3255691486222855,
+            1.6367466382866058
+          ],
+          "radius": 1.6688124006242118,
+          "load": 1.668812400624211,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 160,
+          "release_tick": 168,
+          "phase": 1,
+          "vector": [
+            0.6510662243207184,
+            2.9017376841144022
+          ],
+          "radius": 2.97388110318164,
+          "load": 3.9236219973958937,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 192,
+          "release_tick": 192,
+          "phase": 0,
+          "vector": [
+            4.517611433422786,
+            1.161638147162115
+          ],
+          "radius": 4.664570317653547,
+          "load": 4.915406483279775,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            -0.9936422578507129,
+            5.23268542673412
+          ],
+          "radius": 5.326192046081544,
+          "load": 5.372287415998302,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            1.7628585016515772,
+            3.219490368064548
+          ],
+          "radius": 3.67052970658264,
+          "load": 5.170789213128708,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            1.7093325129560866,
+            3.2636877301418945
+          ],
+          "radius": 3.684219759966487,
+          "load": 5.180704713426026,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            -1.0803444962458557,
+            5.4312585510775975
+          ],
+          "radius": 5.537663196622041,
+          "load": 5.537663196622041,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            -1.1250760380884794,
+            5.6561391979267
+          ],
+          "radius": 5.766949515801554,
+          "load": 5.766949515801555,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            -0.5082526117209387,
+            2.555158426880781
+          ],
+          "radius": 2.6052169398691203,
+          "load": 2.6052169398691194,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 192,
+          "release_tick": 200,
+          "phase": 1,
+          "vector": [
+            1.0322262501209707,
+            4.600530171309646
+          ],
+          "radius": 4.71490921318419,
+          "load": 6.220666147272038,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 224,
+          "release_tick": 224,
+          "phase": 0,
+          "vector": [
+            2.66821769864606,
+            0.8195249887947484
+          ],
+          "radius": 2.7912375202814808,
+          "load": 3.060064633602191,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            -0.600977351596327,
+            3.1635938735697997
+          ],
+          "radius": 3.220170798889417,
+          "load": 3.247807976640011,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            1.018296046457724,
+            2.0327559016947294
+          ],
+          "radius": 2.273548634647208,
+          "load": 3.1903381403241466,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            0.9874791801415405,
+            2.060577333306466
+          ],
+          "radius": 2.284971351625529,
+          "load": 3.198840026482856,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            -0.6727270589422969,
+            3.3820273108422843
+          ],
+          "radius": 3.4482851429538486,
+          "load": 3.448285142953849,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            -0.7279769329700139,
+            3.659787184476804
+          ],
+          "radius": 3.731486654216665,
+          "load": 3.731486654216666,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            -0.6208837859332728,
+            3.1213935770429537
+          ],
+          "radius": 3.182545292441231,
+          "load": 3.1825452924412305,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 224,
+          "release_tick": 232,
+          "phase": 1,
+          "vector": [
+            1.2672256339759955,
+            5.647899152225917
+          ],
+          "radius": 5.78831803213335,
+          "load": 7.636879609781276,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 256,
+          "release_tick": 256,
+          "phase": 0,
+          "vector": [
+            1.5291888353718448,
+            0.6043742448506437
+          ],
+          "radius": 1.6442891236229367,
+          "load": 1.9121448876239995,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            -0.35887832523177104,
+            1.8879229218031406
+          ],
+          "radius": 1.921730108779812,
+          "load": 1.9379936121875734,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            0.5621667538769718,
+            1.2995589869536797
+          ],
+          "radius": 1.4159396243260678,
+          "load": 1.969811290957628,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            0.545249107964659,
+            1.317401514173477
+          ],
+          "radius": 1.4257781521971873,
+          "load": 1.9774997742998124,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            -0.42141569329268963,
+            2.118599757491933
+          ],
+          "radius": 2.160105580521062,
+          "load": 2.1601055805210625,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            -0.4831505117410338,
+            2.4289616483165126
+          ],
+          "radius": 2.476547820250619,
+          "load": 2.4765478202506204,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            -0.6903251091339307,
+            3.470498683555098
+          ],
+          "radius": 3.5384897723263866,
+          "load": 3.5384897723263866,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 256,
+          "release_tick": 264,
+          "phase": 1,
+          "vector": [
+            1.412111526184384,
+            6.293641225171354
+          ],
+          "radius": 6.450114637241664,
+          "load": 8.51002807386306,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 288,
+          "release_tick": 288,
+          "phase": 0,
+          "vector": [
+            0.8293927269924732,
+            0.4647153643672207
+          ],
+          "radius": 0.9507116626332981,
+          "load": 1.198097143149754,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            -0.2096045137502323,
+            1.1014261997639145
+          ],
+          "radius": 1.1211929921787998,
+          "load": 1.1304549864591198,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            0.28553385590135727,
+            0.845376339479905
+          ],
+          "radius": 0.8922952079992029,
+          "load": 1.2183999234875305,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            0.27700814358939535,
+            0.8572381604810152
+          ],
+          "radius": 0.9008833306259574,
+          "load": 1.2256493402228363,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            -0.26647285541395477,
+            1.3396495096021157
+          ],
+          "radius": 1.3658947950884268,
+          "load": 1.3658947950884275,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            -0.3322058841677524,
+            1.670111760993127
+          ],
+          "radius": 1.7028311847283166,
+          "load": 1.702831184728318,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            -0.7331382769942569,
+            3.6857350131223274
+          ],
+          "radius": 3.757942830878345,
+          "load": 3.757942830878347,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 288,
+          "release_tick": 296,
+          "phase": 1,
+          "vector": [
+            1.5014390870343772,
+            6.691765317415404
+          ],
+          "radius": 6.858136947848031,
+          "load": 9.048356694873048,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 65,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 65,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 65,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 71,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 71,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 71,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 97,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 105,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 129,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 137,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 161,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 169,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 193,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 201,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 225,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 233,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 257,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 265,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 289,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 297,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 297,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 71,
+      "gap": 12,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 83,
+      "b_tick": 71,
+      "label": 1
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        5,
+        5
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 43,
+      "internal_deliveries": 70,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 14,
+          "tick": 167,
+          "phase": 0,
+          "exit_tick": 167
+        },
+        {
+          "yard": 15,
+          "tick": 167,
+          "phase": 0,
+          "exit_tick": 167
+        },
+        {
+          "yard": 14,
+          "tick": 199,
+          "phase": 0,
+          "exit_tick": 199
+        },
+        {
+          "yard": 15,
+          "tick": 199,
+          "phase": 0,
+          "exit_tick": 199
+        },
+        {
+          "yard": 14,
+          "tick": 231,
+          "phase": 0,
+          "exit_tick": 231
+        },
+        {
+          "yard": 15,
+          "tick": 231,
+          "phase": 0,
+          "exit_tick": 231
+        },
+        {
+          "yard": 14,
+          "tick": 263,
+          "phase": 0,
+          "exit_tick": 263
+        },
+        {
+          "yard": 15,
+          "tick": 263,
+          "phase": 0,
+          "exit_tick": 263
+        },
+        {
+          "yard": 14,
+          "tick": 295,
+          "phase": 0,
+          "exit_tick": 295
+        },
+        {
+          "yard": 15,
+          "tick": 295,
+          "phase": 0,
+          "exit_tick": 295
+        }
+      ],
+      "clock_origin": 71,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 3,
+          "exit_tick": 103,
+          "release_tick": 103,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0259876369362844
+        },
+        {
+          "yard": 5,
+          "exit_tick": 103,
+          "release_tick": 103,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 7,
+          "exit_tick": 103,
+          "release_tick": 103,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 9,
+          "exit_tick": 135,
+          "release_tick": 135,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 135,
+          "release_tick": 135,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 135,
+          "release_tick": 135,
+          "phase": 0,
+          "vector": [
+            0.35794850313774257,
+            0.07120038415913331
+          ],
+          "radius": 0.3649611288931449,
+          "load": 0.3649611288931449,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 135,
+          "release_tick": 135,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 135,
+          "release_tick": 135,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 8,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            1.250859596987728,
+            0.24881144369639385
+          ],
+          "radius": 1.275365385248708,
+          "load": 1.2753653852487081,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            0.3263861744351933,
+            0.06492224663689428
+          ],
+          "radius": 0.3327804576155611,
+          "load": 0.3327804576155609,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            1.2443788078173672,
+            0.24752233458002898
+          ],
+          "radius": 1.2687576299123957,
+          "load": 1.2687576299123957,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            1.315234436340099,
+            0.26161639539165926
+          ],
+          "radius": 1.3410014022634662,
+          "load": 1.3410014022634669,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            1.4600522558685711,
+            0.2904224507128275
+          ],
+          "radius": 1.4886563706057043,
+          "load": 1.4886563706057043,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            0.2909488504641658,
+            0.05787332463221734
+          ],
+          "radius": 0.2966488754241378,
+          "load": 0.29664887542413776,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            0.38131743413461283,
+            0.07584875354685265
+          ],
+          "radius": 0.3887878843143342,
+          "load": 0.3887878843143341,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 167,
+          "release_tick": 167,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            1.8597378491550598,
+            0.3699248582809859
+          ],
+          "radius": 1.8961722675838542,
+          "load": 1.8961722675838533,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            0.22493748085282347,
+            0.0447428468288516
+          ],
+          "radius": 0.22934426662719193,
+          "load": 0.2293442666271918,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            1.8602458162984388,
+            0.37002589922802676
+          ],
+          "radius": 1.896690186391904,
+          "load": 1.8966901863919035,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            1.9054369477480735,
+            0.37901497416923924
+          ],
+          "radius": 1.942766664447381,
+          "load": 1.9427666644473827,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            1.98820138204265,
+            0.39547784372961126
+          ],
+          "radius": 2.027152549868245,
+          "load": 2.027152549868245,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            0.5257102556823003,
+            0.10457027151353164
+          ],
+          "radius": 0.5360095284731079,
+          "load": 0.5360095284731078,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 199,
+          "release_tick": 199,
+          "phase": 0,
+          "vector": [
+            1.8844163841000556,
+            0.37483372409035676
+          ],
+          "radius": 1.921334283611307,
+          "load": 1.9213342836113072,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            2.235134019835959,
+            0.44459579929638215
+          ],
+          "radius": 2.2789228840353597,
+          "load": 2.2789228840353615,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            0.1623905743804019,
+            0.032301493590148146
+          ],
+          "radius": 0.16557199381462834,
+          "load": 0.16557199381462795,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            1.0584408560931682,
+            0.2105369764168439
+          ],
+          "radius": 1.0791769383590373,
+          "load": 1.0791769383590375,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            1.087808867092372,
+            0.21637863700992763
+          ],
+          "radius": 1.1091203027079901,
+          "load": 1.1091203027079912,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            1.1323150730602303,
+            0.22523147180208064
+          ],
+          "radius": 1.1544984367982167,
+          "load": 1.1544984367982163,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            0.6147338200646196,
+            0.12227815945739424
+          ],
+          "radius": 0.6267771675895096,
+          "load": 0.6267771675895096,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 231,
+          "release_tick": 231,
+          "phase": 0,
+          "vector": [
+            2.4980854324494075,
+            0.49690008728514834
+          ],
+          "radius": 2.5470258193744195,
+          "load": 2.5470258193744195,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            2.466579771856604,
+            0.4906332217507739
+          ],
+          "radius": 2.514902926400484,
+          "load": 2.514902926400485,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            0.5640981683348091,
+            0.11220610209800569
+          ],
+          "radius": 0.5751495047956791,
+          "load": 0.5751495047956792,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            0.5837106349305617,
+            0.11610726425872138
+          ],
+          "radius": 0.5951462023273644,
+          "load": 0.5951462023273646,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            0.6046292150310753,
+            0.1202682285487354
+          ],
+          "radius": 0.6164746016401205,
+          "load": 0.61647460164012,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            0.6696201705797352,
+            0.13319573337518564
+          ],
+          "radius": 0.682738805281044,
+          "load": 0.6827388052810446,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 263,
+          "release_tick": 263,
+          "phase": 0,
+          "vector": [
+            2.8764353078074616,
+            0.572158556690417
+          ],
+          "radius": 2.9327880069987105,
+          "load": 2.9327880069987082,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            1.4277647573590266,
+            0.2840000679475269
+          ],
+          "radius": 1.4557363226047084,
+          "load": 1.4557363226047084,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            0.18882709114187624,
+            0.03756004372444503
+          ],
+          "radius": 0.19252643255845353,
+          "load": 0.1925264325584532,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            0.2593174484979104,
+            0.051581447583571874
+          ],
+          "radius": 0.2643977776576106,
+          "load": 0.2643977776576104,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            0.2729152578137756,
+            0.054286220025767856
+          ],
+          "radius": 0.27826198380706946,
+          "load": 0.27826198380706935,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            0.27929118608769465,
+            0.055554471012975906
+          ],
+          "radius": 0.2847628239005277,
+          "load": 0.2847628239005273,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            0.45799361396119065,
+            0.09110059399778564
+          ],
+          "radius": 0.4669662393107039,
+          "load": 0.4669662393107042,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 295,
+          "release_tick": 295,
+          "phase": 0,
+          "vector": [
+            2.8642360885076,
+            0.5697319810992986
+          ],
+          "radius": 2.9203497908635274,
+          "load": 2.9203497908635248,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 84,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 84,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 84,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 72,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 72,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 72,
+          "origin": "sensory"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 104,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 136,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 168,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 200,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 232,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 264,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 264,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 264,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 264,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 264,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 296,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 296,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 1,
+      "onset": 83,
+      "gap": 18,
+      "noise_a": 1,
+      "noise_b": -2,
+      "a_tick": 84,
+      "b_tick": 99,
+      "label": 1
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        0,
+        5
+      ],
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "abstained": false,
+      "active_rails": 36,
+      "exit_events": 43,
+      "internal_deliveries": 82,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 15,
+          "tick": 180,
+          "phase": 0,
+          "exit_tick": 180
+        },
+        {
+          "yard": 15,
+          "tick": 212,
+          "phase": 0,
+          "exit_tick": 212
+        },
+        {
+          "yard": 15,
+          "tick": 244,
+          "phase": 0,
+          "exit_tick": 244
+        },
+        {
+          "yard": 15,
+          "tick": 276,
+          "phase": 0,
+          "exit_tick": 276
+        },
+        {
+          "yard": 15,
+          "tick": 308,
+          "phase": 0,
+          "exit_tick": 308
+        }
+      ],
+      "clock_origin": 84,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 116,
+          "release_tick": 116,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0353538480397826
+        },
+        {
+          "yard": 3,
+          "exit_tick": 116,
+          "release_tick": 132,
+          "phase": 2,
+          "vector": [
+            -0.21253023372164614,
+            2.6027447044925278e-17
+          ],
+          "radius": 0.21253023372164637,
+          "load": 0.21253023372164614,
+          "gain": 1.0159277543251934
+        },
+        {
+          "yard": 4,
+          "exit_tick": 116,
+          "release_tick": 116,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 0.9882478852426342
+        },
+        {
+          "yard": 5,
+          "exit_tick": 116,
+          "release_tick": 132,
+          "phase": 2,
+          "vector": [
+            -0.21253023372164614,
+            2.6027447044925278e-17
+          ],
+          "radius": 0.21253023372164637,
+          "load": 0.21253023372164614,
+          "gain": 1.0570044684279232
+        },
+        {
+          "yard": 6,
+          "exit_tick": 116,
+          "release_tick": 116,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0040810021111743
+        },
+        {
+          "yard": 7,
+          "exit_tick": 116,
+          "release_tick": 132,
+          "phase": 2,
+          "vector": [
+            -0.21253023372164614,
+            2.6027447044925278e-17
+          ],
+          "radius": 0.21253023372164637,
+          "load": 0.21253023372164614,
+          "gain": 1.0074320088933308
+        },
+        {
+          "yard": 2,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            0.6408386062763792,
+            0.12747072428271508
+          ],
+          "radius": 0.6533933767979381,
+          "load": 0.6533933767979379,
+          "gain": 1.0353538480397826
+        },
+        {
+          "yard": 4,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            0.6366627478784432,
+            0.12664009440293944
+          ],
+          "radius": 0.6491357084974726,
+          "load": 0.6491357084974726,
+          "gain": 0.9882478852426342
+        },
+        {
+          "yard": 6,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            0.6381100405001142,
+            0.12692797880460716
+          ],
+          "radius": 0.6506113552578685,
+          "load": 0.6506113552578684,
+          "gain": 1.0040810021111743
+        },
+        {
+          "yard": 8,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            2.0504035403981544,
+            0.4078506223042289
+          ],
+          "radius": 2.0905733205489905,
+          "load": 2.728055113777735,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 148,
+          "release_tick": 164,
+          "phase": 2,
+          "vector": [
+            -0.26313799410868155,
+            -0.05234140135569237
+          ],
+          "radius": 0.2682931721818845,
+          "load": 0.315946683024263,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            1.0616254284741231,
+            0.21117042724823157
+          ],
+          "radius": 1.0824239002013334,
+          "load": 1.3745438278044075,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 148,
+          "release_tick": 148,
+          "phase": 0,
+          "vector": [
+            0.725640117815349,
+            0.14433879370030497
+          ],
+          "radius": 0.7398562481657723,
+          "load": 1.6694579689975906,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 148,
+          "release_tick": 164,
+          "phase": 2,
+          "vector": [
+            -0.5991233047674562,
+            -0.1191730349036191
+          ],
+          "radius": 0.6108608242174461,
+          "load": 0.6108608242174459,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 13,
+          "exit_tick": 148,
+          "release_tick": 164,
+          "phase": 2,
+          "vector": [
+            -0.5991233047674562,
+            -0.1191730349036191
+          ],
+          "radius": 0.6108608242174461,
+          "load": 0.6108608242174459,
+          "gain": 1.027112638967971
+        },
+        {
+          "yard": 2,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            0.3074945344959997,
+            0.061164465812905223
+          ],
+          "radius": 0.3135187085695042,
+          "load": 0.3135187085695041,
+          "gain": 1.0353538480397826
+        },
+        {
+          "yard": 4,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            0.3007441035192095,
+            0.05982172160647889
+          ],
+          "radius": 0.30663602883147334,
+          "load": 0.3066360288314734,
+          "gain": 0.9882478852426342
+        },
+        {
+          "yard": 6,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            0.3030837060667089,
+            0.06028709748792951
+          ],
+          "radius": 0.30902146690262544,
+          "load": 0.30902146690262544,
+          "gain": 1.0040810021111743
+        },
+        {
+          "yard": 8,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            3.5079039753458856,
+            0.6977654842765632
+          ],
+          "radius": 3.5766278771064757,
+          "load": 4.002521496271107,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 180,
+          "release_tick": 196,
+          "phase": 2,
+          "vector": [
+            -0.3596956020081771,
+            -0.07154790373149783
+          ],
+          "radius": 0.36674245545395573,
+          "load": 0.42715391807192066,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            1.7364273364232499,
+            0.3453968722707024
+          ],
+          "radius": 1.7704459590883665,
+          "load": 1.9855874425024713,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            1.5092819345051633,
+            0.3002148426357718
+          ],
+          "radius": 1.5388505156650107,
+          "load": 2.057568960599554,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 180,
+          "release_tick": 196,
+          "phase": 2,
+          "vector": [
+            -0.30171257073474417,
+            -0.060014361713050475
+          ],
+          "radius": 0.30762346944144714,
+          "load": 0.30762346944144675,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 13,
+          "exit_tick": 180,
+          "release_tick": 196,
+          "phase": 2,
+          "vector": [
+            -0.2577036385497704,
+            -0.05126044082628651
+          ],
+          "radius": 0.2627523513034584,
+          "load": 0.310405862145837,
+          "gain": 1.027112638967971
+        },
+        {
+          "yard": 15,
+          "exit_tick": 180,
+          "release_tick": 180,
+          "phase": 0,
+          "vector": [
+            0.895003034924477,
+            0.17802717248880642
+          ],
+          "radius": 0.9125371809786075,
+          "load": 1.496777036184755,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 212,
+          "release_tick": 212,
+          "phase": 0,
+          "vector": [
+            4.406507399096945,
+            0.8765088186303525
+          ],
+          "radius": 4.492835982698779,
+          "load": 4.8052383161641385,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 212,
+          "release_tick": 228,
+          "phase": 2,
+          "vector": [
+            -0.41922697158256134,
+            -0.08338942938689194
+          ],
+          "radius": 0.42744011350802963,
+          "load": 0.4969238970754403,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 212,
+          "release_tick": 212,
+          "phase": 0,
+          "vector": [
+            2.152467901693188,
+            0.42815248603451656
+          ],
+          "radius": 2.194637240893586,
+          "load": 2.376419688403231,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 212,
+          "release_tick": 212,
+          "phase": 0,
+          "vector": [
+            1.9924263662920543,
+            0.3963182453488017
+          ],
+          "radius": 2.0314603064525065,
+          "load": 2.3810790182038755,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 15,
+          "exit_tick": 212,
+          "release_tick": 212,
+          "phase": 0,
+          "vector": [
+            1.3561022042256359,
+            0.26974549985129376
+          ],
+          "radius": 1.3826698170552696,
+          "load": 2.2679058715993508,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 244,
+          "release_tick": 244,
+          "phase": 0,
+          "vector": [
+            2.5975100328662335,
+            0.5166768699298357
+          ],
+          "radius": 2.64839826286781,
+          "load": 2.8953502141215797,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 244,
+          "release_tick": 260,
+          "phase": 2,
+          "vector": [
+            -0.16668283444830573,
+            -0.03315527720166411
+          ],
+          "radius": 0.16994834422859373,
+          "load": 0.19757479667149833,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 244,
+          "release_tick": 244,
+          "phase": 0,
+          "vector": [
+            1.2338553466830058,
+            0.24542908801276508
+          ],
+          "radius": 1.258028001986052,
+          "load": 1.362230831034728,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 244,
+          "release_tick": 244,
+          "phase": 0,
+          "vector": [
+            1.1385547808409338,
+            0.22647262684849753
+          ],
+          "radius": 1.1608603876812256,
+          "load": 1.36064697074917,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 15,
+          "exit_tick": 244,
+          "release_tick": 244,
+          "phase": 0,
+          "vector": [
+            1.783640516571716,
+            0.35478815770555616
+          ],
+          "radius": 1.8185841001186391,
+          "load": 2.5972756195437148,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 276,
+          "release_tick": 276,
+          "phase": 0,
+          "vector": [
+            1.4821956302946393,
+            0.2948270417416912
+          ],
+          "radius": 1.5112335593834196,
+          "load": 1.715668967217056,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 10,
+          "exit_tick": 276,
+          "release_tick": 276,
+          "phase": 0,
+          "vector": [
+            0.6674964165311518,
+            0.13277329242964947
+          ],
+          "radius": 0.6805734444308992,
+          "load": 0.7369455428048176,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 276,
+          "release_tick": 276,
+          "phase": 0,
+          "vector": [
+            0.6121110750744655,
+            0.12175646304236931
+          ],
+          "radius": 0.6241030399873132,
+          "load": 0.731512522785189,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 15,
+          "exit_tick": 276,
+          "release_tick": 276,
+          "phase": 0,
+          "vector": [
+            2.0472338452918653,
+            0.40722013074676544
+          ],
+          "radius": 2.087341527444402,
+          "load": 2.819954983163434,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 308,
+          "release_tick": 308,
+          "phase": 0,
+          "vector": [
+            0.8243244661877679,
+            0.1639683310583819
+          ],
+          "radius": 0.8404739372198401,
+          "load": 0.9541708777504511,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 10,
+          "exit_tick": 308,
+          "release_tick": 308,
+          "phase": 0,
+          "vector": [
+            0.31831499503490684,
+            0.0633167892348373
+          ],
+          "radius": 0.3245511544627159,
+          "load": 0.3514338219491618,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 308,
+          "release_tick": 308,
+          "phase": 0,
+          "vector": [
+            0.28753887936811595,
+            0.05719503920880581
+          ],
+          "radius": 0.2931720990448594,
+          "load": 0.34362765127196626,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 15,
+          "exit_tick": 308,
+          "release_tick": 308,
+          "phase": 0,
+          "vector": [
+            2.3530024344177316,
+            0.46804128468012945
+          ],
+          "radius": 2.399100477374968,
+          "load": 2.8183252532762557,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 85,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 85,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 85,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 100,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 117,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 133,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 149,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 165,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 181,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 197,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 213,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 229,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 229,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 229,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 213,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 213,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 213,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 245,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 261,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 261,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 261,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 245,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 245,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 245,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 277,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 277,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 277,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 277,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 309,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 309,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 309,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 309,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 1,
+      "onset": 90,
+      "gap": 8,
+      "noise_a": 0,
+      "noise_b": 0,
+      "a_tick": 98,
+      "b_tick": 90,
+      "label": 0
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        5,
+        5
+      ],
+      "prediction": null,
+      "label": 0,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 43,
+      "internal_deliveries": 70,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 14,
+          "tick": 186,
+          "phase": 0,
+          "exit_tick": 186
+        },
+        {
+          "yard": 15,
+          "tick": 186,
+          "phase": 0,
+          "exit_tick": 186
+        },
+        {
+          "yard": 14,
+          "tick": 218,
+          "phase": 0,
+          "exit_tick": 218
+        },
+        {
+          "yard": 15,
+          "tick": 218,
+          "phase": 0,
+          "exit_tick": 218
+        },
+        {
+          "yard": 14,
+          "tick": 250,
+          "phase": 0,
+          "exit_tick": 250
+        },
+        {
+          "yard": 15,
+          "tick": 250,
+          "phase": 0,
+          "exit_tick": 250
+        },
+        {
+          "yard": 14,
+          "tick": 282,
+          "phase": 0,
+          "exit_tick": 282
+        },
+        {
+          "yard": 15,
+          "tick": 282,
+          "phase": 0,
+          "exit_tick": 282
+        },
+        {
+          "yard": 14,
+          "tick": 314,
+          "phase": 0,
+          "exit_tick": 314
+        },
+        {
+          "yard": 15,
+          "tick": 314,
+          "phase": 0,
+          "exit_tick": 314
+        }
+      ],
+      "clock_origin": 90,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 3,
+          "exit_tick": 122,
+          "release_tick": 122,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0159277543251934
+        },
+        {
+          "yard": 5,
+          "exit_tick": 122,
+          "release_tick": 122,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0570044684279232
+        },
+        {
+          "yard": 7,
+          "exit_tick": 122,
+          "release_tick": 122,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0074320088933308
+        },
+        {
+          "yard": 9,
+          "exit_tick": 154,
+          "release_tick": 154,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 154,
+          "release_tick": 154,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 154,
+          "release_tick": 154,
+          "phase": 0,
+          "vector": [
+            0.35794850313774257,
+            0.07120038415913331
+          ],
+          "radius": 0.3649611288931449,
+          "load": 0.3649611288931449,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 154,
+          "release_tick": 154,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 13,
+          "exit_tick": 154,
+          "release_tick": 154,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 1.027112638967971
+        },
+        {
+          "yard": 8,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            1.250859596987728,
+            0.24881144369639385
+          ],
+          "radius": 1.275365385248708,
+          "load": 1.2753653852487081,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            0.32337417365398896,
+            0.06432312243095555
+          ],
+          "radius": 0.3297094482505286,
+          "load": 0.3297094482505285,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            1.2396274746894136,
+            0.24657723565933837
+          ],
+          "radius": 1.263913212665432,
+          "load": 1.2639132126654322,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            1.3123481264135173,
+            0.26104227265117147
+          ],
+          "radius": 1.3380585461824748,
+          "load": 1.3380585461824752,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            1.4561064421607244,
+            0.28963757956696073
+          ],
+          "radius": 1.4846332538372466,
+          "load": 1.4846332538372475,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 13,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            0.3070872094966092,
+            0.06108344383298353
+          ],
+          "radius": 0.31310340360160843,
+          "load": 0.3131034036016084,
+          "gain": 1.027112638967971
+        },
+        {
+          "yard": 14,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            0.38131743413461283,
+            0.07584875354685265
+          ],
+          "radius": 0.3887878843143342,
+          "load": 0.3887878843143341,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 186,
+          "release_tick": 186,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            1.863207126367944,
+            0.37061494042449766
+          ],
+          "radius": 1.8997095119554845,
+          "load": 1.8997095119554863,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            0.22006846915798056,
+            0.043774340185831165
+          ],
+          "radius": 0.2243798653539172,
+          "load": 0.22437986535391702,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            1.852565108939242,
+            0.3684981115440587
+          ],
+          "radius": 1.8888590050796814,
+          "load": 1.888859005079682,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            1.9007711200115183,
+            0.37808688332837537
+          ],
+          "radius": 1.9380094277414663,
+          "load": 1.9380094277414672,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            1.9818228268945028,
+            0.39420907022463164
+          ],
+          "radius": 2.02064903143705,
+          "load": 2.0206490314370504,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 14,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            0.5257102556823003,
+            0.10457027151353164
+          ],
+          "radius": 0.5360095284731079,
+          "load": 0.5360095284731078,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 218,
+          "release_tick": 218,
+          "phase": 0,
+          "vector": [
+            1.8844163841000556,
+            0.37483372409035676
+          ],
+          "radius": 1.921334283611307,
+          "load": 1.9213342836113072,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            2.240742235951839,
+            0.44571134284076874
+          ],
+          "radius": 2.2846409716004326,
+          "load": 2.2846409716004343,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            0.15637664613875965,
+            0.031105248886351747
+          ],
+          "radius": 0.1594402457533506,
+          "load": 0.1594402457533504,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            1.0489540801726704,
+            0.20864993935969744
+          ],
+          "radius": 1.0695043055105944,
+          "load": 1.0695043055105942,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            1.082045900200092,
+            0.21523231162225348
+          ],
+          "radius": 1.1032444326195743,
+          "load": 1.103244432619574,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            1.1244366420047156,
+            0.22366435442959084
+          ],
+          "radius": 1.1464656581534602,
+          "load": 1.1464656581534598,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 14,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            0.6147338200646196,
+            0.12227815945739424
+          ],
+          "radius": 0.6267771675895096,
+          "load": 0.6267771675895096,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 250,
+          "release_tick": 250,
+          "phase": 0,
+          "vector": [
+            2.4980854324494075,
+            0.49690008728514834
+          ],
+          "radius": 2.5470258193744195,
+          "load": 2.5470258193744195,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            2.473506723648535,
+            0.49201107813043166
+          ],
+          "radius": 2.5219655852008724,
+          "load": 2.521965585200874,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 10,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            0.5534978837293051,
+            0.1100975743922268
+          ],
+          "radius": 0.5643415483374153,
+          "load": 0.564341548337415,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            0.5772712407947442,
+            0.11482638912667514
+          ],
+          "radius": 0.5885806530022664,
+          "load": 0.5885806530022659,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            0.5958260544912702,
+            0.11851717104533956
+          ],
+          "radius": 0.6074989769894469,
+          "load": 0.607498976989447,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 14,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            0.6696201705797352,
+            0.13319573337518564
+          ],
+          "radius": 0.682738805281044,
+          "load": 0.6827388052810446,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 282,
+          "release_tick": 282,
+          "phase": 0,
+          "vector": [
+            2.8764353078074616,
+            0.572158556690417
+          ],
+          "radius": 2.9327880069987105,
+          "load": 2.9327880069987082,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            1.4355047589210352,
+            0.28553964998174836
+          ],
+          "radius": 1.4636279597618511,
+          "load": 1.4636279597618516,
+          "gain": 1.0133975782409528
+        },
+        {
+          "yard": 9,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            0.18468407618797078,
+            0.03673594681187443
+          ],
+          "radius": 0.1883022511431267,
+          "load": 0.18830225114312646,
+          "gain": 0.9882048551593088
+        },
+        {
+          "yard": 10,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            0.24803064422302512,
+            0.0493363626251036
+          ],
+          "radius": 0.25288985181450974,
+          "load": 0.2528898518145093,
+          "gain": 0.9729906440102596
+        },
+        {
+          "yard": 11,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            0.2660588210326275,
+            0.052922389953840646
+          ],
+          "radius": 0.27127122148819655,
+          "load": 0.27127122148819627,
+          "gain": 1.00949536854679
+        },
+        {
+          "yard": 12,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            0.2699178953025038,
+            0.05369000755275567
+          ],
+          "radius": 0.27520589949263163,
+          "load": 0.27520589949263163,
+          "gain": 0.9309512331873746
+        },
+        {
+          "yard": 14,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            0.45799361396119065,
+            0.09110059399778564
+          ],
+          "radius": 0.4669662393107039,
+          "load": 0.4669662393107042,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 314,
+          "release_tick": 314,
+          "phase": 0,
+          "vector": [
+            2.8642360885076,
+            0.5697319810992986
+          ],
+          "radius": 2.9203497908635274,
+          "load": 2.9203497908635248,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 99,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 91,
+          "origin": "sensory"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 123,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 155,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 187,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 219,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 251,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 283,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 283,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 283,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 283,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 283,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 315,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 315,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 0,
+      "context": 0,
+      "onset": 95,
+      "gap": 16,
+      "noise_a": 2,
+      "noise_b": 2,
+      "a_tick": 97,
+      "b_tick": 113,
+      "label": 0
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        3,
+        4
+      ],
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "abstained": false,
+      "active_rails": 36,
+      "exit_events": 32,
+      "internal_deliveries": 47,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 15,
+          "tick": 193,
+          "phase": 0,
+          "exit_tick": 193
+        },
+        {
+          "yard": 14,
+          "tick": 225,
+          "phase": 0,
+          "exit_tick": 225
+        },
+        {
+          "yard": 15,
+          "tick": 225,
+          "phase": 0,
+          "exit_tick": 225
+        },
+        {
+          "yard": 14,
+          "tick": 257,
+          "phase": 0,
+          "exit_tick": 257
+        },
+        {
+          "yard": 15,
+          "tick": 257,
+          "phase": 0,
+          "exit_tick": 257
+        },
+        {
+          "yard": 14,
+          "tick": 289,
+          "phase": 0,
+          "exit_tick": 289
+        },
+        {
+          "yard": 15,
+          "tick": 289,
+          "phase": 0,
+          "exit_tick": 289
+        }
+      ],
+      "clock_origin": 97,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 2,
+          "exit_tick": 129,
+          "release_tick": 129,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 4,
+          "exit_tick": 129,
+          "release_tick": 129,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 6,
+          "exit_tick": 129,
+          "release_tick": 129,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 7,
+          "exit_tick": 129,
+          "release_tick": 145,
+          "phase": 2,
+          "vector": [
+            -0.14325346255277602,
+            -0.028494885371705865
+          ],
+          "radius": 0.1460599638015372,
+          "load": 0.1460599638015368,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 2,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            0.6378941233772661,
+            0.12688503021854367
+          ],
+          "radius": 0.6503912080685068,
+          "load": 0.6503912080685068,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 4,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            0.6447149436666313,
+            0.12824177572977244
+          ],
+          "radius": 0.6573456561272714,
+          "load": 0.6573456561272709,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 6,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            0.641406100976994,
+            0.12758360599708984
+          ],
+          "radius": 0.6539719893770151,
+          "load": 0.6539719893770152,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 8,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            2.3630199200600583,
+            0.4700338864644363
+          ],
+          "radius": 2.4093142171633626,
+          "load": 2.4093142171633626,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            1.2048788910268988,
+            0.23966531261993745
+          ],
+          "radius": 1.22848386400287,
+          "load": 1.2284838640028706,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 161,
+          "release_tick": 161,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 2,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            0.3027346679778666,
+            0.06021766949537221
+          ],
+          "radius": 0.30866559075336386,
+          "load": 0.30866559075336375,
+          "gain": 1.001686786792174
+        },
+        {
+          "yard": 4,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            0.3137607785833431,
+            0.06241089925889746
+          ],
+          "radius": 0.3199077156361347,
+          "load": 0.31990771563613435,
+          "gain": 1.0832862310679103
+        },
+        {
+          "yard": 6,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            0.30841191086299763,
+            0.06134694331784292
+          ],
+          "radius": 0.3144540574020445,
+          "load": 0.31445405740204446,
+          "gain": 1.0421043684457756
+        },
+        {
+          "yard": 8,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            3.7269361631022653,
+            0.7413336952755312
+          ],
+          "radius": 3.7999511591059045,
+          "load": 3.7999511591059076,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            1.85926157414029,
+            0.36983012129027465
+          ],
+          "radius": 1.8956866617899195,
+          "load": 1.8956866617899204,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            1.8229908164329525,
+            0.3626154190080541
+          ],
+          "radius": 1.858705317930002,
+          "load": 1.8587053179300028,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 15,
+          "exit_tick": 193,
+          "release_tick": 193,
+          "phase": 0,
+          "vector": [
+            1.1815099600300292,
+            0.23501694323221814
+          ],
+          "radius": 1.2046571085816813,
+          "load": 1.2046571085816813,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 225,
+          "release_tick": 225,
+          "phase": 0,
+          "vector": [
+            4.567841439230957,
+            0.9086001544923348
+          ],
+          "radius": 4.657330743537443,
+          "load": 4.657330743537445,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 225,
+          "release_tick": 225,
+          "phase": 0,
+          "vector": [
+            2.2627129250897573,
+            0.4500815846301545
+          ],
+          "radius": 2.3070420919851973,
+          "load": 2.307042091985199,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 225,
+          "release_tick": 225,
+          "phase": 0,
+          "vector": [
+            2.2184877096157676,
+            0.4412846423223476
+          ],
+          "radius": 2.2619504533180597,
+          "load": 2.26195045331806,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 14,
+          "exit_tick": 225,
+          "release_tick": 225,
+          "phase": 0,
+          "vector": [
+            0.219608848857894,
+            0.0436829160238452
+          ],
+          "radius": 0.2239112405598159,
+          "load": 0.22391124055981565,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 225,
+          "release_tick": 225,
+          "phase": 0,
+          "vector": [
+            1.8192513433950703,
+            0.3618715915733366
+          ],
+          "radius": 1.8548925842842188,
+          "load": 1.8548925842842185,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 257,
+          "release_tick": 257,
+          "phase": 0,
+          "vector": [
+            2.7232710112334333,
+            0.5416922838608381
+          ],
+          "radius": 2.776623044458635,
+          "load": 2.7766230444586357,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 257,
+          "release_tick": 257,
+          "phase": 0,
+          "vector": [
+            1.3065768519634127,
+            0.2598942947875032
+          ],
+          "radius": 1.3321742057815544,
+          "load": 1.3321742057815553,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 257,
+          "release_tick": 257,
+          "phase": 0,
+          "vector": [
+            1.2808163473489915,
+            0.2547702118297541
+          ],
+          "radius": 1.305909023045706,
+          "load": 1.3059090230457062,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 14,
+          "exit_tick": 257,
+          "release_tick": 257,
+          "phase": 0,
+          "vector": [
+            0.18054483608793523,
+            0.035912600764423486
+          ],
+          "radius": 0.18408191853542913,
+          "load": 0.18408191853542893,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 257,
+          "release_tick": 257,
+          "phase": 0,
+          "vector": [
+            2.212442711862905,
+            0.440082217508521
+          ],
+          "radius": 2.2557870270578517,
+          "load": 2.2557870270578513,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 289,
+          "release_tick": 289,
+          "phase": 0,
+          "vector": [
+            1.5860244882106285,
+            0.3154798856720871
+          ],
+          "radius": 1.61709654488143,
+          "load": 1.6170965448814312,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 289,
+          "release_tick": 289,
+          "phase": 0,
+          "vector": [
+            0.7170832722142991,
+            0.14263673128449791
+          ],
+          "radius": 0.7311317640487881,
+          "load": 0.7311317640487888,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 289,
+          "release_tick": 289,
+          "phase": 0,
+          "vector": [
+            0.7027069510959032,
+            0.1397771032166276
+          ],
+          "radius": 0.7164737941489081,
+          "load": 0.7164737941489084,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 14,
+          "exit_tick": 289,
+          "release_tick": 289,
+          "phase": 0,
+          "vector": [
+            0.15646041403299502,
+            0.031121911356504505
+          ],
+          "radius": 0.15952565475765473,
+          "load": 0.15952565475765446,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 289,
+          "release_tick": 289,
+          "phase": 0,
+          "vector": [
+            2.454859867578699,
+            0.48830198784539297
+          ],
+          "radius": 2.5029534156236846,
+          "load": 2.5029534156236832,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 98,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 98,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 98,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 114,
+          "origin": "sensory"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 130,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 146,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 146,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 146,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 162,
+          "origin": "yard"
+        },
+        {
+          "edge": 12,
+          "source": 2,
+          "dest": 8,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 30,
+          "source": 2,
+          "dest": 11,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 20,
+          "source": 4,
+          "dest": 9,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 26,
+          "source": 4,
+          "dest": 10,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 16,
+          "source": 6,
+          "dest": 8,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 28,
+          "source": 6,
+          "dest": 10,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 194,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 226,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 226,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 226,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 226,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 258,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 258,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 258,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 258,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 290,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 290,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 290,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 290,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
+  },
+  {
+    "example": {
+      "order": 1,
+      "context": 0,
+      "onset": 77,
+      "gap": 10,
+      "noise_a": -1,
+      "noise_b": 0,
+      "a_tick": 86,
+      "b_tick": 77,
+      "label": 1
+    },
+    "model": "strong",
+    "clock": "stimulus_reset",
+    "result": {
+      "counts": [
+        5,
+        5
+      ],
+      "prediction": null,
+      "label": 1,
+      "correct": false,
+      "abstained": true,
+      "active_rails": 36,
+      "exit_events": 43,
+      "internal_deliveries": 70,
+      "beyond_horizon_deliveries": 0,
+      "release_events": [
+        {
+          "yard": 14,
+          "tick": 173,
+          "phase": 0,
+          "exit_tick": 173
+        },
+        {
+          "yard": 15,
+          "tick": 173,
+          "phase": 0,
+          "exit_tick": 173
+        },
+        {
+          "yard": 14,
+          "tick": 205,
+          "phase": 0,
+          "exit_tick": 205
+        },
+        {
+          "yard": 15,
+          "tick": 205,
+          "phase": 0,
+          "exit_tick": 205
+        },
+        {
+          "yard": 14,
+          "tick": 237,
+          "phase": 0,
+          "exit_tick": 237
+        },
+        {
+          "yard": 15,
+          "tick": 237,
+          "phase": 0,
+          "exit_tick": 237
+        },
+        {
+          "yard": 14,
+          "tick": 269,
+          "phase": 0,
+          "exit_tick": 269
+        },
+        {
+          "yard": 15,
+          "tick": 269,
+          "phase": 0,
+          "exit_tick": 269
+        },
+        {
+          "yard": 14,
+          "tick": 301,
+          "phase": 0,
+          "exit_tick": 301
+        },
+        {
+          "yard": 15,
+          "tick": 301,
+          "phase": 0,
+          "exit_tick": 301
+        }
+      ],
+      "clock_origin": 77,
+      "pilot_deliveries": 14,
+      "events": [
+        {
+          "yard": 3,
+          "exit_tick": 109,
+          "release_tick": 109,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0259876369362844
+        },
+        {
+          "yard": 5,
+          "exit_tick": 109,
+          "release_tick": 109,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 0.9958529635054192
+        },
+        {
+          "yard": 7,
+          "exit_tick": 109,
+          "release_tick": 109,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.031627241295174
+        },
+        {
+          "yard": 9,
+          "exit_tick": 141,
+          "release_tick": 141,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 141,
+          "release_tick": 141,
+          "phase": 0,
+          "vector": [
+            0.2454660405099185,
+            0.04882623122913891
+          ],
+          "radius": 0.250275004544318,
+          "load": 0.2502750045443178,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 141,
+          "release_tick": 141,
+          "phase": 0,
+          "vector": [
+            0.35794850313774257,
+            0.07120038415913331
+          ],
+          "radius": 0.3649611288931449,
+          "load": 0.3649611288931449,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 141,
+          "release_tick": 141,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 141,
+          "release_tick": 141,
+          "phase": 0,
+          "vector": [
+            0.6034145436476609,
+            0.12002661538827221
+          ],
+          "radius": 0.6152361334374625,
+          "load": 0.6152361334374625,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 8,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            1.250859596987728,
+            0.24881144369639385
+          ],
+          "radius": 1.275365385248708,
+          "load": 1.2753653852487081,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            0.3263861744351933,
+            0.06492224663689428
+          ],
+          "radius": 0.3327804576155611,
+          "load": 0.3327804576155609,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            1.2443788078173672,
+            0.24752233458002898
+          ],
+          "radius": 1.2687576299123957,
+          "load": 1.2687576299123957,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            1.315234436340099,
+            0.26161639539165926
+          ],
+          "radius": 1.3410014022634662,
+          "load": 1.3410014022634669,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            1.4600522558685711,
+            0.2904224507128275
+          ],
+          "radius": 1.4886563706057043,
+          "load": 1.4886563706057043,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 13,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            0.2909488504641658,
+            0.05787332463221734
+          ],
+          "radius": 0.2966488754241378,
+          "load": 0.29664887542413776,
+          "gain": 0.8684119960356174
+        },
+        {
+          "yard": 14,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            0.38131743413461283,
+            0.07584875354685265
+          ],
+          "radius": 0.3887878843143342,
+          "load": 0.3887878843143341,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 173,
+          "release_tick": 173,
+          "phase": 0,
+          "vector": [
+            0.490932081019837,
+            0.09765246245827781
+          ],
+          "radius": 0.5005500090886357,
+          "load": 0.5005500090886356,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            1.8597378491550598,
+            0.3699248582809859
+          ],
+          "radius": 1.8961722675838542,
+          "load": 1.8961722675838533,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            0.22493748085282347,
+            0.0447428468288516
+          ],
+          "radius": 0.22934426662719193,
+          "load": 0.2293442666271918,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            1.8602458162984388,
+            0.37002589922802676
+          ],
+          "radius": 1.896690186391904,
+          "load": 1.8966901863919035,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            1.9054369477480735,
+            0.37901497416923924
+          ],
+          "radius": 1.942766664447381,
+          "load": 1.9427666644473827,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            1.98820138204265,
+            0.39547784372961126
+          ],
+          "radius": 2.027152549868245,
+          "load": 2.027152549868245,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            0.5257102556823003,
+            0.10457027151353164
+          ],
+          "radius": 0.5360095284731079,
+          "load": 0.5360095284731078,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 205,
+          "release_tick": 205,
+          "phase": 0,
+          "vector": [
+            1.8844163841000556,
+            0.37483372409035676
+          ],
+          "radius": 1.921334283611307,
+          "load": 1.9213342836113072,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            2.235134019835959,
+            0.44459579929638215
+          ],
+          "radius": 2.2789228840353597,
+          "load": 2.2789228840353615,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            0.1623905743804019,
+            0.032301493590148146
+          ],
+          "radius": 0.16557199381462834,
+          "load": 0.16557199381462795,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            1.0584408560931682,
+            0.2105369764168439
+          ],
+          "radius": 1.0791769383590373,
+          "load": 1.0791769383590375,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            1.087808867092372,
+            0.21637863700992763
+          ],
+          "radius": 1.1091203027079901,
+          "load": 1.1091203027079912,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            1.1323150730602303,
+            0.22523147180208064
+          ],
+          "radius": 1.1544984367982167,
+          "load": 1.1544984367982163,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            0.6147338200646196,
+            0.12227815945739424
+          ],
+          "radius": 0.6267771675895096,
+          "load": 0.6267771675895096,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 237,
+          "release_tick": 237,
+          "phase": 0,
+          "vector": [
+            2.4980854324494075,
+            0.49690008728514834
+          ],
+          "radius": 2.5470258193744195,
+          "load": 2.5470258193744195,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            2.466579771856604,
+            0.4906332217507739
+          ],
+          "radius": 2.514902926400484,
+          "load": 2.514902926400485,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 10,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            0.5640981683348091,
+            0.11220610209800569
+          ],
+          "radius": 0.5751495047956791,
+          "load": 0.5751495047956792,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            0.5837106349305617,
+            0.11610726425872138
+          ],
+          "radius": 0.5951462023273644,
+          "load": 0.5951462023273646,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            0.6046292150310753,
+            0.1202682285487354
+          ],
+          "radius": 0.6164746016401205,
+          "load": 0.61647460164012,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            0.6696201705797352,
+            0.13319573337518564
+          ],
+          "radius": 0.682738805281044,
+          "load": 0.6827388052810446,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 269,
+          "release_tick": 269,
+          "phase": 0,
+          "vector": [
+            2.8764353078074616,
+            0.572158556690417
+          ],
+          "radius": 2.9327880069987105,
+          "load": 2.9327880069987082,
+          "gain": 1.0
+        },
+        {
+          "yard": 8,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            1.4277647573590266,
+            0.2840000679475269
+          ],
+          "radius": 1.4557363226047084,
+          "load": 1.4557363226047084,
+          "gain": 0.9755830625027003
+        },
+        {
+          "yard": 9,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            0.18882709114187624,
+            0.03756004372444503
+          ],
+          "radius": 0.19252643255845353,
+          "load": 0.1925264325584532,
+          "gain": 1.0217334298892866
+        },
+        {
+          "yard": 10,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            0.2593174484979104,
+            0.051581447583571874
+          ],
+          "radius": 0.2643977776576106,
+          "load": 0.2643977776576104,
+          "gain": 1.0252455998357783
+        },
+        {
+          "yard": 11,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            0.2729152578137756,
+            0.054286220025767856
+          ],
+          "radius": 0.27826198380706946,
+          "load": 0.27826198380706935,
+          "gain": 1.0430001739843635
+        },
+        {
+          "yard": 12,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            0.27929118608769465,
+            0.055554471012975906
+          ],
+          "radius": 0.2847628239005277,
+          "load": 0.2847628239005273,
+          "gain": 0.9702446873432934
+        },
+        {
+          "yard": 14,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            0.45799361396119065,
+            0.09110059399778564
+          ],
+          "radius": 0.4669662393107039,
+          "load": 0.4669662393107042,
+          "gain": 1.0
+        },
+        {
+          "yard": 15,
+          "exit_tick": 301,
+          "release_tick": 301,
+          "phase": 0,
+          "vector": [
+            2.8642360885076,
+            0.5697319810992986
+          ],
+          "radius": 2.9203497908635274,
+          "load": 2.9203497908635248,
+          "gain": 1.0
+        }
+      ],
+      "deliveries": [
+        {
+          "edge": 0,
+          "source": 0,
+          "dest": 2,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 4,
+          "source": 0,
+          "dest": 4,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 8,
+          "source": 0,
+          "dest": 6,
+          "tick": 87,
+          "origin": "sensory"
+        },
+        {
+          "edge": 3,
+          "source": 1,
+          "dest": 3,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 7,
+          "source": 1,
+          "dest": 5,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 11,
+          "source": 1,
+          "dest": 7,
+          "tick": 78,
+          "origin": "sensory"
+        },
+        {
+          "edge": 19,
+          "source": 3,
+          "dest": 9,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 25,
+          "source": 3,
+          "dest": 10,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 31,
+          "source": 3,
+          "dest": 11,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 37,
+          "source": 3,
+          "dest": 12,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 43,
+          "source": 3,
+          "dest": 13,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 15,
+          "source": 5,
+          "dest": 8,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 33,
+          "source": 5,
+          "dest": 11,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 39,
+          "source": 5,
+          "dest": 12,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 45,
+          "source": 5,
+          "dest": 13,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 23,
+          "source": 7,
+          "dest": 9,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 41,
+          "source": 7,
+          "dest": 12,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 47,
+          "source": 7,
+          "dest": 13,
+          "tick": 110,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 142,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 62,
+          "source": 13,
+          "dest": 10,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 67,
+          "source": 13,
+          "dest": 11,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 72,
+          "source": 13,
+          "dest": 12,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 89,
+          "source": 13,
+          "dest": 15,
+          "tick": 174,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 206,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 238,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 270,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 270,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 270,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 270,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 270,
+          "origin": "yard"
+        },
+        {
+          "edge": 84,
+          "source": 8,
+          "dest": 15,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 48,
+          "source": 9,
+          "dest": 8,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 79,
+          "source": 9,
+          "dest": 14,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 85,
+          "source": 9,
+          "dest": 15,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 75,
+          "source": 10,
+          "dest": 13,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 80,
+          "source": 10,
+          "dest": 14,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 81,
+          "source": 11,
+          "dest": 14,
+          "tick": 302,
+          "origin": "yard"
+        },
+        {
+          "edge": 56,
+          "source": 12,
+          "dest": 9,
+          "tick": 302,
+          "origin": "yard"
+        }
+      ]
+    },
+    "options": {}
   }
 ]

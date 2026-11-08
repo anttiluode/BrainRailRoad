@@ -477,3 +477,8 @@ The completed artifact should let Antti flip the context, swap the train order, 
 
 **The railway is useful when it learns what should happen next, and its learned structure survives the passing train.**
 
+## November 8 rescue experiment (stimulus-locked clock)
+
+- Added an optional `clock.mode="stimulus_reset"`: an explicit pilot at r=min(a_tick,b_tick) reaches all 14 yards, and phase origin and exits move to r. Default remains the absolute clock; original fixtures and tests are unchanged. The reset is mirrored in `circuit_core.js`, has 12 new parity fixtures, and passes trained-export parity on 512 trials.
+- Seed 11, identical batches, 200 updates. Order-only, fixed onset: 50.0% (one class fires O0, the other is silent). Order-only, random onset: absolute clock 0.0% (total silence) with or without penalties; reset 19.7% with penalties and 50.0% without (one-sided code). Reset without penalties at 600 updates: unchanged, gradient 0.000. Success criterion not met.
+- Empty-yard mask probe: removing it changes only threshold gradients (spurious). The zero-gradient cause is ∂r/∂z=0 at z=0 on fully silent trials. The mask is left unchanged. See `RESCUE.md`.

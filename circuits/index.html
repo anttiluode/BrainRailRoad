@@ -100,10 +100,11 @@ function update(){
  const c0=outputs.filter(r=>r.yard===14).length,c1=outputs.filter(r=>r.yard===15).length;
  setText('o0',c0);setText('o1',c1);setText('railCount',result.active_rails);
  setText('packets',result.deliveries.filter(d=>d.tick<=now).length);
+ setText('clockText',model.clock?.mode==='stimulus_reset'?`stimulus-locked reset: explicit pilot at tick ${result.clock_origin} → 14 yards; exits every 32 ticks from there`:'32-tick shared reference / no PLL');
  setText('liveEvents',result.events.filter(e=>e.exit_tick<=now).length+' events / '+result.events.length+' eventual');
  const prediction=now<320?'pending':(c0===c1?'ABSTAIN':c0>c1?'O0':'O1');
  el('result').innerHTML=`<small>Expected output: <strong>O${ex.label}</strong> · observed: ${prediction}</small><big>${prediction==='pending'?'Running…':prediction}</big><small>${now===320?(result.correct?'✓ correct':'✕ incorrect or abstained'):'Decisions scored only after full replay.'}</small>`;
- setText('taskComment',`A at ${ex.a_tick}, B at ${ex.b_tick}. Label y=order XOR context = ${ex.label}. This model is ${model.origin||'unknown origin'}; no result is pre-scripted.`);
+ setText('taskComment',`A at ${ex.a_tick}, B at ${ex.b_tick}. Label y=order XOR context = ${ex.label}. This model is ${model.origin||'unknown origin'}; no result is pre-scripted.${String(model.training?.task||'').startsWith('order')?' NOTE: this export was trained on ORDER ONLY (context 0); its target is O'+ex.order+', not the XOR label.':''}`);
  const msgs=[];
  for(const r of result.release_events)if(r.tick<=now)msgs.push([r.tick,`O${r.yard-14} RELEASE · phase ${r.phase}`]);
  for(const v of result.events)if(v.exit_tick<=now)msgs.push([v.exit_tick,`${v.yard<8?'H1':v.yard<14?'H2':'O'} #${v.yard} fires · phase ${v.phase} → release ${v.release_tick}`]);

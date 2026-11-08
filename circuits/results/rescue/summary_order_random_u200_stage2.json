@@ -1,0 +1,174 @@
+{
+ "abs_pen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.0,
+   "abstentions": 512,
+   "predicted_O0": 0,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    0.0,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 1.5234375,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 0,
+   "dev_accuracy": 0.078125,
+   "n": 512,
+   "accuracy": 0.1328125,
+   "abstentions": 378,
+   "predicted_O0": 13,
+   "predicted_O1": 121,
+   "mean_output_releases": [
+    0.02734375,
+    0.30859375
+   ],
+   "mean_exit_events_all_yards": 2.26953125,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0078125,
+    "order1_ctx0": 0.2578125
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 11.789985146999925
+ },
+ "abs_nopen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.0,
+   "abstentions": 512,
+   "predicted_O0": 0,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    0.0,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 1.35546875,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 0,
+   "dev_accuracy": 0.078125,
+   "n": 512,
+   "accuracy": 0.1328125,
+   "abstentions": 378,
+   "predicted_O0": 13,
+   "predicted_O1": 121,
+   "mean_output_releases": [
+    0.02734375,
+    0.30859375
+   ],
+   "mean_exit_events_all_yards": 2.26953125,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0078125,
+    "order1_ctx0": 0.2578125
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 13.44613348300004
+ },
+ "reset_pen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.197265625,
+   "abstentions": 411,
+   "predicted_O0": 0,
+   "predicted_O1": 101,
+   "mean_output_releases": [
+    0.208984375,
+    0.87109375
+   ],
+   "mean_exit_events_all_yards": 2.9921875,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 0.39453125
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 50,
+   "dev_accuracy": 0.203125,
+   "n": 512,
+   "accuracy": 0.197265625,
+   "abstentions": 411,
+   "predicted_O0": 0,
+   "predicted_O1": 101,
+   "mean_output_releases": [
+    0.0,
+    0.310546875
+   ],
+   "mean_exit_events_all_yards": 1.115234375,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 1.0,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 0.39453125
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 117.13723992300004
+ },
+ "reset_nopen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 0,
+   "predicted_O1": 256,
+   "mean_output_releases": [
+    0.0,
+    1.859375
+   ],
+   "mean_exit_events_all_yards": 8.287109375,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 1.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 50,
+   "dev_accuracy": 0.5,
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 0,
+   "predicted_O1": 256,
+   "mean_output_releases": [
+    0.0,
+    0.75390625
+   ],
+   "mean_exit_events_all_yards": 3.970703125,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 1.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 118.6402805759999
+ }
+}

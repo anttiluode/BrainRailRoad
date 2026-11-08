@@ -32,6 +32,16 @@ for order,context in ((0,0),(0,1),(1,0),(1,1)):
     example=trial(order,context,95,8)
     result=infer(strong,example,trace=True)
     fixtures.append({"example":example,"model":"strong","result":result,"options":{}})
+# Optional stimulus-locked pilot reset (rescue experiment). Same rails, the
+# clock origin moves to the first source emission; onsets cover every phase.
+import copy
+for name,base in (("untrained",m),("strong",strong)):
+    reset=copy.deepcopy(base);reset["clock"]={"mode":"stimulus_reset"}
+    for i,(order,context,onset,gap,na,nb) in enumerate([(0,0,64,6,0,0),(1,0,71,12,0,0),(0,1,83,18,1,-2),
+                                                       (1,1,90,8,0,0),(0,0,95,16,2,2),(1,0,77,10,-1,0)]):
+        example=trial(order,context,onset,gap,na,nb)
+        result=infer(reset,example,trace=True)
+        fixtures.append({"example":example,"model":name,"clock":"stimulus_reset","result":result,"options":{}})
 folder=ROOT/"results"
 save_model(m,folder/"untrained_seed11.json")
 save_model(strong,folder/"strong_reference.json")

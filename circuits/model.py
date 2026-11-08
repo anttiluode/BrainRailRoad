@@ -115,6 +115,27 @@ def validate_model(model:dict[str,Any], *, enforce_quotas=True)->None:
                     raise ValueError(f"quota {family}:{dst}")
     if len(model["thresholds"])!=14 or any(not 0.15<=v<=1.5 for v in model["thresholds"]): raise ValueError("thresholds")
     if len(model["context"])!=12 or any(len(r)!=2 for r in model["context"]): raise ValueError("context")
+    if clock_mode(model)!="absolute" and model.get("architecture",{}).get("spiking"):
+        raise ValueError("the spiking comparator has no exit clock to reset")
+
+
+CLOCK_MODES=("absolute","stimulus_reset")
+
+
+def clock_mode(model:dict[str,Any])->str:
+    mode=(model.get("clock") or {}).get("mode","absolute")
+    if mode not in CLOCK_MODES: raise ValueError(f"unknown clock mode {mode}")
+    return mode
+
+
+def clock_origin(model:dict[str,Any],example:dict[str,Any])->int:
+    """Phase origin tick. Absolute clock: 0. Stimulus reset: first source emission.
+
+    min(a_tick,b_tick) is the same for both order classes (it is the onset), so
+    the reset carries timing of *a* stimulus, never which stimulus or the label.
+    """
+    if clock_mode(model)=="absolute": return 0
+    return min(int(example["a_tick"]),int(example["b_tick"]))
 
 
 def trial(order:int,context:int,onset:int,gap:int,noise_a:int=0,noise_b:int=0)->dict[str,Any]:
@@ -152,15 +173,21 @@ def infer(model:dict[str,Any], example:dict[str,Any], *, trace=False, broken_edg
             if at>=ticks: scheduled_late+=1
             if trace: deliveries.append({"edge":eid,"source":src,"dest":e["dst"],"tick":at,"origin":"sensory"})
     L=[0.]*16; zx=[0.]*16;zy=[0.]*16;b=[0.]*16;c=[0.]*16
-    # Static clock reference, no PLL in this main-task implementation.
+    # Clock. Default "absolute": static 32-tick reference, exits at t=32,64,...
+    # Optional "stimulus_reset" (rescue experiment, Nov 8 2026): an explicit,
+    # label-neutral PILOT broadcast fires at the first source emission
+    # r=min(a_tick,b_tick) and is delivered to all 14 yards at tick r. Every
+    # yard's phase origin becomes r; exits move to t=r+32,r+64,... The pilot
+    # carries no load, no vector and no label; it is counted separately.
+    origin=clock_origin(model,example)
     for t in range(ticks):
         arrival_by_edge=defaultdict(float)
         for eid,value in arrivals.pop(t,[]): arrival_by_edge[eid]+=value
         incoming=defaultdict(list)
         for eid,value in arrival_by_edge.items(): incoming[edges[eid]["dst"]].append((eid,value))
-        theta=2.0*math.pi*(t%P)/P
+        theta=2.0*math.pi*((t-origin)%P)/P
         ct=math.cos(theta);st=math.sin(theta)
-        exit_tick=(t>0 and t%P==0)
+        exit_tick=(t>origin and (t-origin)%P==0)
         for y in YARDS:
             b[y]=model["basket_leak"]*b[y]+float((basket or {}).get(y,{}).get(t,0))
             c[y]=model["chandelier_leak"]*c[y]+float((chandelier or {}).get(y,{}).get(t,0))
@@ -205,6 +232,8 @@ def infer(model:dict[str,Any], example:dict[str,Any], *, trace=False, broken_edg
             "active_rails":sum(int(v) for v in intact),"exit_events":len(events),
             "internal_deliveries":len(deliveries) if trace else None,
             "beyond_horizon_deliveries":scheduled_late,"release_events":output_releases}
+    if clock_mode(model)!="absolute":
+        result["clock_origin"]=origin;result["pilot_deliveries"]=len(YARDS)
     if trace:
         result["events"]=events;result["deliveries"]=deliveries
     return result

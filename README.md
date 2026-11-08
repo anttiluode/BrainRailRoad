@@ -76,6 +76,15 @@ python gru_baseline.py --seed 11 --hidden 15 --readout-tick 127 --eval-frozen
 
 The default bundled model was drawn from `make_model(11)` and is identified as **random-untrained** in the export. The browser's answer panel shows what this model actually does, often `ABSTAIN` or an incorrect response. If a checkpoint is trained later, `train.py` writes a **hard** export in `circuits/results/`; the same JSON can be loaded in the lab without trainer code. Every operational active rail can be audited; context channels and pilot infrastructure are separately counted and cannot inject labels.
 
+## Rescue experiment, 8 Nov 2026: the clock and the silence attractor
+
+Full write-up: [`circuits/RESCUE.md`](circuits/RESCUE.md). This is one seed and a small CPU run. **No configuration beats chance on validation.**
+
+- **Random onset, absolute clock:** total output silence, gradient norm → 0.
+- **Optional stimulus-locked reset** (an explicit, label-neutral pilot at the first stimulus; default off, exported in the model JSON, mirrored exactly in JS): it escapes total silence. It reaches the same state the original railway reaches with a *fixed* onset: the order bit is carried perfectly by fire-vs-silence, but one class leaves both outputs silent. A silent trial is a tie, so strict accuracy is 50.0% (p = 0.52).
+- **Bottleneck:** a fully silent trial gives exactly zero gradient. This is not because of the empty-yard mask (removing it only adds spurious threshold gradient; weight, delay and topology gradients are bit-identical). It is because the vector magnitude r has zero derivative at z = 0. The one-sided code is therefore a fixed point (600 updates, gradient 0.000).
+- **Proposed next step, not run:** a surrogate-only credit route through the scalar load L*.
+
 ## Next experiment
 
 First rescue learning without secretly introducing a differentiable hidden-state readout or post-hoc hard-coded routing. Diagnose the silence attractor; try and explicitly label any different initial thresholds, curriculum or additional training penalty. Then freeze validated checkpoints, run the designed baselines and damage protocol. After that, implement the precisely defined pilot-only clock correction and its separate time/jitter accounting. At each stage compare Python/JavaScript event traces, not merely final accuracy.

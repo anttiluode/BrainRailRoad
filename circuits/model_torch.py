@@ -19,9 +19,17 @@ def logit(z:float)->float:
     return math.log(z/(1-z))
 
 class SurrogateRail(nn.Module):
-    def __init__(self,seed:int=11,fixed_phase=False,fixed_delay=False,fixed_topology=False,spiking=False,init_threshold=0.35):
+    def __init__(self,seed:int=11,fixed_phase=False,fixed_delay=False,fixed_topology=False,spiking=False,init_threshold=0.35,
+                 clock_reset=False,surrogate_through_empty=False):
         super().__init__()
+        if clock_reset and spiking:raise ValueError('the spiking comparator has no exit clock to reset')
         self.model_seed=seed
+        # Optional stimulus-locked pilot reset (model.py clock_origin). Default off = original semantics.
+        self.clock_reset=clock_reset
+        # DIAGNOSTIC ONLY (rescue.py gradient probe): drop the multiplicative
+        # empty-yard mask from the surrogate pulse. Hard forward is unchanged
+        # because hard_fire already requires L>eps. Never used for training.
+        self.surrogate_through_empty=surrogate_through_empty
         self.fixed_phase=fixed_phase;self.fixed_delay=fixed_delay;self.fixed_topology=fixed_topology;self.spiking=spiking
         reference=make_model(seed)
         es=reference['edges']
@@ -120,12 +128,23 @@ class SurrogateRail(nn.Module):
         fires_sum=torch.zeros((),dtype=weights.dtype,device=device)
         copy_sum=mask[:12].sum().expand(B).sum()
         past_fires=torch.full((B,14),-10000,dtype=torch.long,device=device)
+        origin=torch.minimum(a_tick,b_tick) if self.clock_reset else None
         for t in range(T):
             active_input=source_current[t] if source_current[t] is not None else empty12
             incoming_hidden=torch.stack(queue[t]).sum(dim=0) if queue[t] else empty78
-            theta=2*math.pi*(t%32)/32
-            g=torch.ones_like(self.cos_ports) if self.spiking else torch.exp(2.0*(math.cos(theta)*self.cos_ports+math.sin(theta)*self.sin_ports-1))
-            basal=(active_input*g[:12])@self.dst_mat[:12]+(incoming_hidden*g[12:])@self.dst_mat[12:]
+            if self.clock_reset:
+                # Per-trial phase origin; per-row clock and per-row exit flag.
+                rel=t-origin
+                ph=torch.remainder(rel,32)
+                th=2*math.pi*ph.to(weights.dtype)/32
+                ct=torch.cos(th)[:,None];st=torch.sin(th)[:,None]
+                exit_row=((rel>0)&(ph==0)).to(weights.dtype)[:,None]
+                g=torch.exp(2.0*(ct*self.cos_ports[None,:]+st*self.sin_ports[None,:]-1))
+            else:
+                theta=2*math.pi*(t%32)/32
+                ct=math.cos(theta);st=math.sin(theta);exit_row=None
+                g=torch.ones_like(self.cos_ports) if self.spiking else torch.exp(2.0*(math.cos(theta)*self.cos_ports+math.sin(theta)*self.sin_ports-1))
+            basal=(active_input*g[...,:12])@self.dst_mat[:12]+(incoming_hidden*g[...,12:])@self.dst_mat[12:]
             # Main training task has no inhibitor interventions.
             if self.spiking:
                 Lstar=0.985*L+basal
@@ -133,10 +152,12 @@ class SurrogateRail(nn.Module):
                 zx=zx*0;zy=zy*0
             else:
                 Lstar=0.985*L+basal
-                xstar=0.985*zx+basal*math.cos(theta)
-                ystar=0.985*zy+basal*math.sin(theta)
+                xstar=0.985*zx+basal*ct
+                ystar=0.985*zy+basal*st
                 L=Lstar;zx=xstar;zy=ystar
-            if not self.spiking and (t==0 or t%32):continue
+            if exit_row is not None:
+                if not bool(exit_row.any()):continue
+            elif not self.spiking and (t==0 or t%32):continue
             if self.spiking:
                 radius=Lstar
                 hard_fire=((a*radius>=threshold[None,:]) & (t-past_fires>=2)).to(weights.dtype)
@@ -147,7 +168,9 @@ class SurrogateRail(nn.Module):
             fire=hard_fire-soft_fire.detach()+soft_fire
             if self.spiking:fire=fire*(t-past_fires>=2).to(weights.dtype)
             if not self.spiking:
-                fire=fire*(Lstar>1e-8).to(weights.dtype)  # genuinely empty yards have no surrogate pulse
+                if not self.surrogate_through_empty:
+                    fire=fire*(Lstar>1e-8).to(weights.dtype)  # genuinely empty yards have no surrogate pulse
+                if exit_row is not None:fire=fire*exit_row  # rows not at their own exit cannot fire
                 q=torch.stack((zx/radius,zy/radius,-zx/radius,-zy/radius),dim=-1)
                 soft_phase=F.softmax(q/temperature_phase,dim=-1)
                 hard_phase=F.one_hot(q.argmax(dim=-1),4).to(weights.dtype)
@@ -198,4 +221,8 @@ class SurrogateRail(nn.Module):
         model['origin']='supervised-surrogate-BPTT' if not self.spiking else 'surrogate-spiking-control'
         model['architecture']={'fixed_phase':self.fixed_phase,'fixed_delay':self.fixed_delay,
                                'fixed_topology':self.fixed_topology,'spiking':self.spiking}
+        if self.clock_reset:
+            model['clock']={'mode':'stimulus_reset','origin':'first_source_emission',
+                            'pilot':'one label-neutral broadcast to all 14 yards at the origin tick; no load, no vector',
+                            'pilot_deliveries_per_trial':14}
         return model

@@ -45,6 +45,9 @@
           throw Error('Incoming quota violated '+fam+':'+dst);
     }
     if (model.thresholds.length !== 14 || model.context.length !== 12) throw Error('Bad yard parameters');
+    const mode = model.clock?.mode ?? 'absolute';
+    if (!['absolute','stimulus_reset'].includes(mode)) throw Error('Unknown clock mode '+mode);
+    if (mode !== 'absolute' && model.architecture?.spiking) throw Error('Spiking comparator has no exit clock to reset');
     return true;
   }
   function trial(order, context, onset, gap, noiseA=0, noiseB=0) {
@@ -79,6 +82,11 @@
     }
     const L=new Float64Array(16),zx=new Float64Array(16),zy=new Float64Array(16),b=new Float64Array(16),c=new Float64Array(16);
     const baskets=opts.basket||{},chandeliers=opts.chandelier||{};
+    // Optional stimulus-locked reset: explicit pilot at the first source
+    // emission sets every yard's phase origin (see model.py clock_origin).
+    const resetClock=(model.clock?.mode ?? 'absolute')==='stimulus_reset';
+    const origin=resetClock?Math.min(example.a_tick,example.b_tick):0;
+    const mod=(x,n)=>((x%n)+n)%n;
     for(let t=0;t<ticks;t++) {
       const vals=new Map(), incoming=new Map();
       for(const [eid,value] of arrivals.get(t)||[])vals.set(eid,(vals.get(eid)||0)+value);
@@ -88,9 +96,9 @@
         if(!incoming.has(dst))incoming.set(dst,[]);
         incoming.get(dst).push([eid,value]);
       }
-      const theta=2*PI*(t%model.period)/model.period;
+      const theta=2*PI*mod(t-origin,model.period)/model.period;
       const ct=Math.cos(theta),st=Math.sin(theta);
-      const exitTick=(t>0 && t%model.period===0);
+      const exitTick=(t>origin && mod(t-origin,model.period)===0);
       for(let y=2;y<16;y++) {
         b[y]=model.basket_leak*b[y]+Number(baskets[y]?.[t]||0);
         c[y]=model.chandelier_leak*c[y]+Number(chandeliers[y]?.[t]||0);
@@ -142,6 +150,7 @@
       abstained:prediction===null,active_rails:live,exit_events:events.length,
       internal_deliveries:opts.trace?deliveries.length:null,beyond_horizon_deliveries:beyond,
       release_events:outputReleases};
+    if(resetClock){result.clock_origin=origin;result.pilot_deliveries=14;}
     if(opts.trace){result.events=events;result.deliveries=deliveries;}
     return result;
   }

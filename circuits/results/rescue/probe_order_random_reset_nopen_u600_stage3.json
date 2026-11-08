@@ -1,0 +1,87 @@
+{
+ "state": "results/rescue/order_random_reset_nopen_u600_stage3_final.pt",
+ "task": "order_random",
+ "clock_reset": true,
+ "by_class": {
+  "0": {
+   "design_surrogate": {
+    "raw_weight": 0.0,
+    "raw_threshold": 0.0,
+    "context": 0.0,
+    "score": 0.0,
+    "delay_logits": 0.0,
+    "O1_threshold": 0.0,
+    "O1_incoming_weight_and_score": 0.0,
+    "hard_counts_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 0.0,
+    "raw_threshold": 0.43380312331594895,
+    "context": 0.0,
+    "score": 0.0,
+    "delay_logits": 0.0,
+    "O1_threshold": 0.26561937002665315,
+    "O1_incoming_weight_and_score": 0.0,
+    "hard_counts_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 224,
+     "loaded_subthreshold": 0,
+     "firing": 0
+    },
+    "O1": {
+     "empty": 224,
+     "loaded_subthreshold": 0,
+     "firing": 0
+    }
+   }
+  },
+  "1": {
+   "design_surrogate": {
+    "raw_weight": 5.8612801255754455e-05,
+    "raw_threshold": 0.00019740532273962425,
+    "context": 5.571497993951532e-05,
+    "score": 5.898938272561457e-05,
+    "delay_logits": 3.96221552584156e-05,
+    "O1_threshold": 1.3086704918914395e-05,
+    "O1_incoming_weight_and_score": 6.68178429486127e-05,
+    "hard_counts_mean": [
+     0.0,
+     5.0
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 5.8612801255754455e-05,
+    "raw_threshold": 0.0046098044690458355,
+    "context": 5.5714979899065904e-05,
+    "score": 5.898938272561457e-05,
+    "delay_logits": 3.96221552584156e-05,
+    "O1_threshold": 0.000605670320315852,
+    "O1_incoming_weight_and_score": 6.68178429486127e-05,
+    "hard_counts_mean": [
+     0.0,
+     5.0
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 216,
+     "loaded_subthreshold": 8,
+     "firing": 0
+    },
+    "O1": {
+     "empty": 64,
+     "loaded_subthreshold": 0,
+     "firing": 160
+    }
+   }
+  }
+ }
+}

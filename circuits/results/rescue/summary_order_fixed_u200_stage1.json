@@ -1,0 +1,88 @@
+{
+ "abs_pen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 256,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    2.2421875,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 8.1953125,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 1.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 200,
+   "dev_accuracy": 0.5,
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 256,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    2.2421875,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 8.1953125,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 1.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 10.509404117000031
+ },
+ "abs_nopen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 256,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    1.984375,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 8.10546875,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 1.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 150,
+   "dev_accuracy": 0.5,
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 256,
+   "predicted_O1": 0,
+   "mean_output_releases": [
+    1.2421875,
+    0.0
+   ],
+   "mean_exit_events_all_yards": 5.111328125,
+   "pilot_deliveries_per_trial": 0,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 1.0,
+    "order1_ctx0": 0.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 11.31484496500002
+ }
+}

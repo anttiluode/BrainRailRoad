@@ -27,5 +27,7 @@ jobs:
           node tests/parity_node.cjs
           python tests/ablation_parity_python.py
           node tests/ablation_parity_node.cjs
+          python tests/rescue_parity_python.py
+          node tests/rescue_parity_node.cjs
       - name: JavaScript syntax checks
         run: node --check circuits/circuit_core.js

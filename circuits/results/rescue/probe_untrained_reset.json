@@ -1,0 +1,87 @@
+{
+ "state": "untrained",
+ "task": "order_random",
+ "clock_reset": true,
+ "by_class": {
+  "0": {
+   "design_surrogate": {
+    "raw_weight": 0.0,
+    "raw_threshold": 0.0,
+    "context": 0.0,
+    "score": 0.0,
+    "delay_logits": 0.0,
+    "O1_threshold": 0.0,
+    "O1_incoming_weight_and_score": 0.0,
+    "hard_counts_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 0.0,
+    "raw_threshold": 0.4588026498636784,
+    "context": 0.0,
+    "score": 0.0,
+    "delay_logits": 0.0,
+    "O1_threshold": 0.32442246494496424,
+    "O1_incoming_weight_and_score": 0.0,
+    "hard_counts_mean": [
+     0.0,
+     0.0
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 224,
+     "loaded_subthreshold": 0,
+     "firing": 0
+    },
+    "O1": {
+     "empty": 224,
+     "loaded_subthreshold": 0,
+     "firing": 0
+    }
+   }
+  },
+  "1": {
+   "design_surrogate": {
+    "raw_weight": 0.03184742645777169,
+    "raw_threshold": 0.051591891294965345,
+    "context": 0.024715746502685296,
+    "score": 0.015575297631095698,
+    "delay_logits": 0.010502108800550159,
+    "O1_threshold": 0.04398521264522443,
+    "O1_incoming_weight_and_score": 0.039876715604057915,
+    "hard_counts_mean": [
+     0.0,
+     0.5
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 0.03184742645777169,
+    "raw_threshold": 0.3777431144327646,
+    "context": 0.02471574658841228,
+    "score": 0.015575297631095698,
+    "delay_logits": 0.010502108800550159,
+    "O1_threshold": 0.27307810719210596,
+    "O1_incoming_weight_and_score": 0.039876715604057915,
+    "hard_counts_mean": [
+     0.0,
+     0.5
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 224,
+     "loaded_subthreshold": 0,
+     "firing": 0
+    },
+    "O1": {
+     "empty": 174,
+     "loaded_subthreshold": 34,
+     "firing": 16
+    }
+   }
+  }
+ }
+}

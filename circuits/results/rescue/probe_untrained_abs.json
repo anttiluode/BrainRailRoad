@@ -1,0 +1,87 @@
+{
+ "state": "untrained",
+ "task": "order_random",
+ "clock_reset": false,
+ "by_class": {
+  "0": {
+   "design_surrogate": {
+    "raw_weight": 0.11953536175495354,
+    "raw_threshold": 0.20290052339942882,
+    "context": 0.09673787098377708,
+    "score": 0.057172896813095946,
+    "delay_logits": 0.03907908151825028,
+    "O1_threshold": 0.17499574522833716,
+    "O1_incoming_weight_and_score": 0.14753882110921318,
+    "hard_counts_mean": [
+     0.0625,
+     0.34375
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 0.11953536175495354,
+    "raw_threshold": 0.5634265387527226,
+    "context": 0.0967378716188686,
+    "score": 0.057172896813095946,
+    "delay_logits": 0.03907908151825028,
+    "O1_threshold": 0.4119257388341139,
+    "O1_incoming_weight_and_score": 0.14753882110921318,
+    "hard_counts_mean": [
+     0.0625,
+     0.34375
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 272,
+     "loaded_subthreshold": 14,
+     "firing": 2
+    },
+    "O1": {
+     "empty": 231,
+     "loaded_subthreshold": 46,
+     "firing": 11
+    }
+   }
+  },
+  "1": {
+   "design_surrogate": {
+    "raw_weight": 0.04217179304405601,
+    "raw_threshold": 0.08512900889148974,
+    "context": 0.032758747135280104,
+    "score": 0.019755491543751388,
+    "delay_logits": 0.0137902945372737,
+    "O1_threshold": 0.06996244199369826,
+    "O1_incoming_weight_and_score": 0.052845262359189266,
+    "hard_counts_mean": [
+     0.0,
+     0.375
+    ]
+   },
+   "mask_removed_diagnostic": {
+    "raw_weight": 0.04217179304405601,
+    "raw_threshold": 0.4017819524053406,
+    "context": 0.03275874721541355,
+    "score": 0.019755491543751388,
+    "delay_logits": 0.0137902945372737,
+    "O1_threshold": 0.28914834776610576,
+    "O1_incoming_weight_and_score": 0.052845262359189266,
+    "hard_counts_mean": [
+     0.0,
+     0.375
+    ]
+   },
+   "output_exit_slots": {
+    "O0": {
+     "empty": 272,
+     "loaded_subthreshold": 16,
+     "firing": 0
+    },
+    "O1": {
+     "empty": 232,
+     "loaded_subthreshold": 44,
+     "firing": 12
+    }
+   }
+  }
+ }
+}

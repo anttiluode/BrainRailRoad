@@ -1,0 +1,45 @@
+{
+ "reset_nopen": {
+  "final": {
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 0,
+   "predicted_O1": 256,
+   "mean_output_releases": [
+    0.0,
+    2.5
+   ],
+   "mean_exit_events_all_yards": 13.16015625,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 1.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "best_on_dev": {
+   "update": 50,
+   "dev_accuracy": 0.5,
+   "n": 512,
+   "accuracy": 0.5,
+   "abstentions": 256,
+   "predicted_O0": 0,
+   "predicted_O1": 256,
+   "mean_output_releases": [
+    0.0,
+    0.75390625
+   ],
+   "mean_exit_events_all_yards": 3.970703125,
+   "pilot_deliveries_per_trial": 14,
+   "binomial_p_vs_chance": 0.5176223177429193,
+   "cells": {
+    "order0_ctx0": 0.0,
+    "order1_ctx0": 1.0
+   },
+   "torch_reference_count_mismatches": 0
+  },
+  "seconds": 401.50623711800006
+ }
+}

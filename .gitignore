@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pt
+circuits/results/manifest_*.jsonl
+circuits/results/*_training.json
+circuits/results/*_hard.json
+!circuits/results/untrained_seed11.json
+*.log
+.DS_Store
